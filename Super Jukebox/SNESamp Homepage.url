@@ -1,0 +1,5 @@
+[DEFAULT]
+BASEURL=http://www.snesmusic.org
+
+[InternetShortcut]
+URL=http://www.snesmusic.org

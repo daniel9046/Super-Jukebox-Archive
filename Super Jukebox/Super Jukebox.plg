@@ -1,0 +1,69 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Super Jukebox - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/Super Jukebox.res" /d "NDEBUG" "C:\SJ\Super Jukebox\Super Jukebox.rc"" 
+Creating temporary file "C:\DOCUME~1\alin\LOCALS~1\Temp\RSP2B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib msimg32.lib winmm.lib /nologo /version:3.1 /stack:0x100000,0x10000 /subsystem:windows /incremental:no /pdb:"Release/Super Jukebox.pdb" /machine:I386 /out:"Release/Super Jukebox.exe" 
+".\Release\AboutDialog.obj"
+".\Release\ActiveWallpaper.obj"
+".\Release\ActiveWallpaperDialog.obj"
+".\Release\AddFilesDialog.obj"
+".\Release\Application.obj"
+".\Release\BetaBox.obj"
+".\Release\ConfigurationDialog.obj"
+".\Release\ControlPanelDialog.obj"
+".\Release\Extractor.obj"
+".\Release\FFTlib.obj"
+".\Release\FileList.obj"
+".\Release\FindDialog.obj"
+".\Release\GotoDialog.obj"
+".\Release\LabelEdit.obj"
+".\Release\List.obj"
+".\Release\ListEntry.obj"
+".\Release\Main.obj"
+".\Release\MainWindow.obj"
+".\Release\Menu.obj"
+".\Release\MiscDialog.obj"
+".\Release\Player.obj"
+".\Release\PlayerDialog.obj"
+".\Release\PlayList.obj"
+".\Release\PlayListDialog.obj"
+".\Release\PlaylistFilterDialog.obj"
+".\Release\ProgramDialog.obj"
+".\Release\ReBar.obj"
+".\Release\Registry.obj"
+".\Release\Skin.obj"
+".\Release\SkinDialog.obj"
+".\Release\SourceBar.obj"
+".\Release\StatusBar.obj"
+".\Release\StdAfx.obj"
+".\Release\ToolBar.obj"
+".\Release\ToolbarCustomizeDialog.obj"
+".\Release\ViewDialog.obj"
+".\Release\VisualizationDialog.obj"
+".\Release\VisWindow.obj"
+".\Release\WarningDialog.obj"
+".\Release\Wnd.obj"
+".\Release\Super Jukebox.res"
+".\zlib.lib"
+".\unrar.lib"
+".\Uematsu.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\alin\LOCALS~1\Temp\RSP2B.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+Super Jukebox.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,1138 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PLAYER DIALOGEX 0, 0, 242, 142
+STYLE WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Sample rate:",IDC_STATIC,0,2,40,8
+    COMBOBOX        IDC_COMBO_SAMPLE_RATE,48,0,48,50,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_SAMPLE_RATE
+    LTEXT           "&Interpolation:",IDC_STATIC,0,18,42,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_INTERPOLATION,48,16,48,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_INTERPOLATION
+    LTEXT           "Mi&xing mode:",IDC_STATIC,0,34,42,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_MIXING_MODE,48,32,48,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_MIXING_MODE
+    LTEXT           "&Preamp:",IDC_STATIC,0,50,27,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_PREAMP,48,48,48,12,ES_AUTOHSCROLL,0,
+                    HIDC_EDIT_PREAMP
+    CONTROL         "Spin4",IDC_SPIN_PREAMP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,83,48,11,12
+    LTEXT           "&Buffer length:",IDC_STATIC,0,66,43,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_BUFFER_LENGTH,48,64,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER,0,HIDC_EDIT_BUFFER_LENGTH
+    CONTROL         "Spin1",IDC_SPIN_BUFFER_LENGTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,83,64,11,12
+    LTEXT           "T&hread priority:",IDC_STATIC,0,82,48,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_PRIORITY_LEVEL,48,80,48,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_PRIORITY_LEVEL
+    LTEXT           "Sample size:",IDC_STATIC,101,2,40,8
+    CONTROL         "&8-bit",IDC_RADIO_8BIT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,143,2,26,10,0,HIDC_RADIO_8BIT
+    CONTROL         "1&6-bit",IDC_RADIO_16BIT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,172,2,30,10,0,HIDC_RADIO_16BIT
+    CONTROL         "&32-bit",IDC_RADIO_32BIT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,205,2,30,10,0,HIDC_RADIO_32BIT
+    LTEXT           "Channels:",IDC_STATIC,101,18,32,8
+    CONTROL         "&Mono",IDC_RADIO_MONO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,135,18,30,10,0,HIDC_RADIO_MONO
+    CONTROL         "S&tereo",IDC_RADIO_STEREO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,168,18,33,10,0,HIDC_RADIO_STEREO
+    LTEXT           "APR:",IDC_STATIC,101,34,18,8
+    CONTROL         "&Off",IDC_RADIO_APR_OFF,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,121,34,22,10,0,HIDC_RADIO_APR_OFF
+    CONTROL         "O&n",IDC_RADIO_APR_ON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,146,34,22,10,0,HIDC_RADIO_APR_ON
+    CONTROL         "In&crease",IDC_RADIO_APR_INC,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,170,34,43,10,0,
+                    HIDC_RADIO_APR_INC
+    CONTROL         "Use &low-pass filter",IDC_CHECK_USE_LOW_PASS_FILTER,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,101,48,
+                    73,10,0,HIDC_CHECK_USE_LOW_PASS_FILTER
+    CONTROL         "Use old &ADPCM method",IDC_CHECK_USE_OLD_SCHOOL_BRE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,60,93,10,0,
+                    HIDC_CHECK_USE_OLD_SCHOOL_BRE
+    CONTROL         "S&urround sound",IDC_CHECK_SURROUNDSOUND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,101,72,66,10,0,
+                    HIDC_CHECK_SURROUNDSOUND
+    CONTROL         "&Reverse stereo",IDC_CHECK_REVERSE_STEREO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,101,84,64,10,0,
+                    HIDC_CHECK_REVERSE_STEREO
+    GROUPBOX        "WAV Output",IDC_STATIC,0,96,239,44
+    CONTROL         "Output to &WAV",IDC_CHECK_OUTPUTTOWAV,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,107,64,10,0,
+                    HIDC_CHECK_OUTPUTTOWAV
+    CONTROL         "Output with soun&d",IDC_CHECK_OUTPUTWITHSOUND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,77,107,73,10,0,
+                    HIDC_CHECK_OUTPUTWITHSOUND
+    LTEXT           "Output &folder:",IDC_STATIC,5,122,44,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_WAVDIR,51,119,127,14,ES_AUTOHSCROLL,0,
+                    HIDC_EDIT_WAVDIR
+    PUSHBUTTON      "Brows&e...",IDC_BUTTON_BROWSEFORWAVDIR,183,119,50,14,0,
+                    0,HIDC_BUTTON_BROWSEFORWAVDIR
+END
+
+IDD_PLAYLIST DIALOGEX 0, 0, 248, 175
+STYLE DS_MODALFRAME | DS_CENTER | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Playlist Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,5,154,50,14,WS_GROUP,0,HIDOK
+    PUSHBUTTON      "Cancel",IDCANCEL,59,154,50,14,0,0,HIDCANCEL
+    PUSHBUTTON      "&Set As Default",IDC_BUTTON_SETDEFAULT,135,154,53,14,0,
+                    0,HIDC_BUTTON_SETDEFAULT
+    PUSHBUTTON      "&Reset",IDC_BUTTON_RESET,193,154,50,14,0,0,
+                    HIDC_BUTTON_RESET
+    GROUPBOX        "Play Settings",IDC_STATIC,5,0,238,44
+    LTEXT           "Mode:",IDC_STATIC,11,11,21,8
+    CONTROL         "&Individual",IDC_RADIO_INDIVIDUAL,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,37,11,46,10,0,
+                    HIDC_RADIO_INDIVIDUAL
+    CONTROL         "&Universal",IDC_RADIO_UNIVERSAL,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,83,11,45,10,0,
+                    HIDC_RADIO_UNIVERSAL
+    CONTROL         "I&ndefinite",IDC_RADIO_INDEFINITE,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,128,11,45,10,0,
+                    HIDC_RADIO_INDEFINITE
+    LTEXT           "&Length:",IDC_STATIC,11,27,25,8
+    EDITTEXT        IDC_EDIT_UNI_LENGTH,37,24,40,14,ES_AUTOHSCROLL,0,
+                    HIDC_EDIT_UNI_LENGTH
+    CONTROL         "Spin1",IDC_SPIN_UNI_LENGTH,"msctls_updown32",
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,66,24,11,14
+    LTEXT           "&Fade:",IDC_STATIC,83,27,19,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_UNI_FADE,105,24,40,14,ES_AUTOHSCROLL,0,
+                    HIDC_EDIT_UNI_FADE
+    CONTROL         "Spin3",IDC_SPIN_UNI_FADE,"msctls_updown32",
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,134,24,11,14
+    GROUPBOX        "Play End Settings",IDC_STATIC,5,45,238,25
+    CONTROL         "&Auto rewind",IDC_CHECK_AUTO_REWIND,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,11,56,50,10,0,
+                    HIDC_CHECK_AUTO_REWIND
+    CONTROL         "&Randomize",IDC_CHECK_RANDOMIZE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,64,56,47,10,0,
+                    HIDC_CHECK_RANDOMIZE
+    CONTROL         "&Detect inactivity",IDC_CHECK_DETECT_INACTIVITY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,115,56,63,10,0,
+                    HIDC_CHECK_DETECT_INACTIVITY
+    CONTROL         "Au&to advance",IDC_CHECK_AUTO_ADVANCE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,182,56,57,10,0,
+                    HIDC_CHECK_AUTO_ADVANCE
+    GROUPBOX        "Skin Settings",IDC_STATIC,5,71,238,77
+    CONTROL         "Use &skin",IDC_CHECK_USE_SKIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,11,81,43,10,0,HIDC_CHECK_USE_SKIN
+    LTEXT           "Lay&out:",IDC_STATIC,67,81,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_SKIN_LAYOUT,95,80,48,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_SKIN_LAYOUT
+    LTEXT           "S&kin file:",IDC_STATIC,11,99,28,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SKIN_FILE,43,96,136,14,ES_AUTOHSCROLL,0,
+                    HIDC_EDIT_SKIN_FILE
+    PUSHBUTTON      "&Browse...",IDC_BUTTON_BROWSE_SKIN,184,96,50,14,0,0,
+                    HIDC_BUTTON_BROWSE_SKIN
+    CONTROL         "Blend skin",IDC_CHECK_BLEND_SKIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,115,49,10,0,
+                    HIDC_CHECK_BLEND_SKIN
+    LTEXT           "Blending color:",IDC_STATIC,65,115,48,8,NOT WS_GROUP
+    CONTROL         "",IDC_BUTTON_BLENDING_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,115,113,20,14,0,HIDC_BUTTON_BLENDING_COLOR
+    LTEXT           "Text color:",IDC_STATIC,141,115,34,8,NOT WS_GROUP
+    CONTROL         "",IDC_BUTTON_TEXT_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,179,113,20,14,0,HIDC_BUTTON_TEXT_COLOR
+    LTEXT           "Blending level:",IDC_STATIC,11,132,47,8,NOT WS_GROUP
+    CONTROL         "Slider1",IDC_SLIDER_BLENDING_LEVEL,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,61,129,100,15,0,
+                    HIDC_SLIDER_BLENDING_LEVEL
+    LTEXT           "",IDC_STATIC_BLENDING_LEVEL,165,132,27,8,NOT WS_GROUP
+END
+
+IDD_ADDFILES DIALOG DISCARDABLE  0, 0, 186, 87
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "",IDC_STATIC_ADDFILES_TITLE,7,8,172,8,SS_NOPREFIX
+    CTEXT           "",IDC_STATIC_ADDFILES,7,25,172,10,SS_NOPREFIX | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CONTROL         "Progress1",IDC_PROGRESS_ADDFILES,"msctls_progress32",
+                    NOT WS_VISIBLE | WS_BORDER,7,43,172,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,66,50,14
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 183, 228
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About Super Jukebox"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,206,50,14,WS_GROUP
+    LTEXT           "Super Jukebox Version 3.3",IDC_STATIC,7,7,86,8,
+                    SS_NOPREFIX
+    CONTROL         "http://superjukebox.zophar.net/",IDC_BUTTON_HOMEPAGE,
+                    "Button",BS_OWNERDRAW,7,15,105,8
+    LTEXT           "Copyright (C) Costel M. Fodor, 2005.",IDC_STATIC,7,29,
+                    114,8,SS_NOPREFIX
+    CONTROL         "EuroEscortBoy@lycos.com",IDC_BUTTON_MAILTO,"Button",
+                    BS_OWNERDRAW,7,37,88,8
+    LTEXT           "All rights reserved.",IDC_STATIC,7,45,58,8,SS_NOPREFIX
+    LTEXT           "SNESAPU.DLL Version:",IDC_STATIC_COREINFO,7,59,105,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) Anti Resonance.",IDC_STATIC,7,67,96,8
+    CONTROL         "Goto Zophar's Domain SPC Archive",
+                    IDC_BUTTON_ZDSPCARCHIVE,"Button",BS_OWNERDRAW,7,81,114,8
+    CONTROL         "Goto SNESmusic SPC Archive",
+                    IDC_BUTTON_SNESAMPSPCARCHIVE,"Button",BS_OWNERDRAW,7,89,
+                    100,8
+    EDITTEXT        IDC_EDIT_STATISTICS,7,102,169,69,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    LTEXT           "Deny God, deny responsibility in God, only thereby do we redeem the world.     --     Friedrich Nietzsche",
+                    IDC_STATIC,7,176,169,23,SS_NOPREFIX,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE
+    ICON            IDI_SUPER_JUKEBOX,IDC_STATIC,131,33,20,20
+END
+
+IDD_FIND DIALOGEX 0, 0, 236, 74
+STYLE DS_MODALFRAME | DS_CENTER | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Fi&nd what:",IDC_STATIC,23,10,34,8
+    EDITTEXT        IDC_EDIT_FIND_WHAT,60,7,111,14,ES_AUTOHSCROLL,0,
+                    HIDC_EDIT_FIND_WHAT
+    LTEXT           "&Search column:",IDC_STATIC,7,26,50,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_SEARCH_COLUMN,60,24,112,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_SEARCH_COLUMN
+    CONTROL         "Match &whole word only",IDC_CHECK_MATCH_WHOLE_WORD_ONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,7,41,87,
+                    10,0,HIDC_CHECK_MATCH_WHOLE_WORD_ONLY
+    CONTROL         "Match &case",IDC_CHECK_MATCH_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,54,53,10,0,
+                    HIDC_CHECK_MATCH_CASE
+    GROUPBOX        "Direction",IDC_STATIC,95,40,69,27
+    CONTROL         "&Up",IDC_RADIO_FIND_UP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,100,51,25,10,0,HIDC_RADIO_FIND_UP
+    CONTROL         "&Down",IDC_RADIO_FIND_DOWN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,125,51,35,10,0,HIDC_RADIO_FIND_DOWN
+    DEFPUSHBUTTON   "&Find Next",IDOK,179,7,50,14,WS_GROUP,0,HIDOK
+    PUSHBUTTON      "Close",IDCANCEL,179,24,50,14,0,0,HIDCANCEL
+END
+
+IDD_GOTO DIALOGEX 0, 0, 188, 46
+STYLE DS_MODALFRAME | DS_CENTER | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Go To"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Enter song number:",IDC_STATIC,7,7,62,8
+    EDITTEXT        IDC_EDIT_GOTO_SONG_NUMBER,7,20,116,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,0,HIDC_EDIT_GOTO_SONG_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_GOTO_SONG_NUMBER,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,113,20,10,14
+    DEFPUSHBUTTON   "&Go To",IDOK,131,7,50,14,WS_GROUP,0,HIDOK
+    PUSHBUTTON      "Close",IDCANCEL,131,24,50,14,0,0,HIDCANCEL
+END
+
+IDD_CONFIGURATION DIALOGEX 0, 0, 367, 210
+STYLE DS_MODALFRAME | DS_CENTER | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Configuration"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREE_CONFIGURATION,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    TVS_SHOWSELALWAYS | TVS_TRACKSELECT | WS_BORDER | 
+                    WS_TABSTOP,7,7,108,178,0,HIDC_TREE_CONFIGURATION
+    DEFPUSHBUTTON   "OK",IDOK,7,189,50,14,0,0,HIDOK
+    PUSHBUTTON      "Cancel",IDCANCEL,65,189,50,14,0,0,HIDCANCEL
+END
+
+IDD_SKIN DIALOGEX 0, 0, 237, 88
+STYLE WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Use &skin",IDC_CHECK_USE_SKIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,0,2,43,10,0,HIDC_CHECK_USE_SKIN
+    LTEXT           "Lay&out:",IDC_STATIC,55,2,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_SKIN_LAYOUT,83,0,48,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_SKIN_LAYOUT
+    LTEXT           "S&kin file:",IDC_STATIC,0,19,28,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SKIN_FILE,32,16,150,14,ES_AUTOHSCROLL,0,
+                    HIDC_EDIT_SKIN_FILE
+    PUSHBUTTON      "&Browse...",IDC_BUTTON_BROWSE_SKIN,187,16,50,14,0,0,
+                    HIDC_BUTTON_BROWSE_SKIN
+    CONTROL         "Blend skin",IDC_CHECK_BLEND_SKIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,35,49,10,0,
+                    HIDC_CHECK_BLEND_SKIN
+    LTEXT           "Blending color:",IDC_STATIC,53,35,48,8,NOT WS_GROUP
+    CONTROL         "",IDC_BUTTON_BLENDING_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,104,33,20,14,0,HIDC_BUTTON_BLENDING_COLOR
+    LTEXT           "Text color:",IDC_STATIC,130,35,34,8,NOT WS_GROUP
+    CONTROL         "",IDC_BUTTON_TEXT_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,167,33,20,14,0,HIDC_BUTTON_TEXT_COLOR
+    LTEXT           "Blending level:",IDC_STATIC,0,52,47,8,NOT WS_GROUP
+    CONTROL         "Slider1",IDC_SLIDER_BLENDING_LEVEL,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,50,49,100,15,0,
+                    HIDC_SLIDER_BLENDING_LEVEL
+    LTEXT           "",IDC_STATIC_BLENDING_LEVEL,154,52,27,8,NOT WS_GROUP
+    CONTROL         "&Always use program skin",
+                    IDC_CHECK_ALWAYS_USE_PROGRAM_SKIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,78,93,10,0,
+                    HIDC_CHECK_ALWAYS_USE_PROGRAM_SKIN
+END
+
+IDD_VISUALIZATION DIALOGEX 0, 0, 207, 134
+STYLE WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "&Active",IDC_CHECK_SHOW_VISUALIZATION,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,0,0,36,10,0,
+                    HIDC_CHECK_SHOW_VISUALIZATION
+    CONTROL         "Show &column labels",IDC_CHECK_SHOWVISLABELS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,12,79,10,0,
+                    HIDC_CHECK_SHOWVISLABELS
+    LTEXT           "&Mode:",IDC_STATIC,0,30,21,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_VIS_MODE,57,28,58,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_VIS_MODE
+    LTEXT           "&Spectrum range:",IDC_STATIC,0,45,53,8,NOT WS_GROUP
+    CONTROL         "Slider1",IDC_SLIDER_SPECTRUM_SIZE,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,53,44,100,12,0,
+                    HIDC_SLIDER_SPECTRUM_SIZE
+    LTEXT           "",IDC_STATIC_SPECTRUM_SIZE,155,45,27,8,NOT WS_GROUP
+    LTEXT           "&Rate:",IDC_STATIC,0,60,18,8,NOT WS_GROUP
+    CONTROL         "Slider2",IDC_SLIDER_VIS_RATE,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,53,59,100,12,0,
+                    HIDC_SLIDER_VIS_RATE
+    LTEXT           "",IDC_STATIC_VIS_RATE,155,60,27,8,NOT WS_GROUP
+    LTEXT           "&Thread priority:",IDC_STATIC,0,75,48,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_VIS_PRIORITY,57,73,58,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_VIS_PRIORITY
+    GROUPBOX        "Colors",IDC_STATIC,0,93,207,39
+    LTEXT           "Sc&heme:",IDC_STATIC,6,103,29,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_VISCOLSCHEME,6,114,49,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP,0,
+                    HIDC_COMBO_VISCOLSCHEME
+    LTEXT           "&Item:",IDC_STATIC,59,103,16,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_VISCOLITEM,59,114,79,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_VISCOLITEM
+    LTEXT           "Co&lor:",IDC_STATIC,143,103,19,8,NOT WS_GROUP
+    CONTROL         "",IDC_BUTTON_VISCOL1,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    143,114,20,14,0,HIDC_BUTTON_VISCOL1
+    LTEXT           "Color &2:",IDC_STATIC,176,103,25,8,NOT WS_GROUP
+    CONTROL         "",IDC_BUTTON_VISCOL2,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    176,114,20,14,0,HIDC_BUTTON_VISCOL2
+END
+
+IDD_FILTER DIALOGEX 0, 0, 356, 170
+STYLE DS_MODALFRAME | DS_CENTER | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Playlist Filter"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "&File:",IDC_STATIC,7,10,14,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_FILTER_FILE,48,7,206,100,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP,0,
+                    HIDC_COMBO_FILTER_FILE
+    LTEXT           "&Title:",IDC_STATIC,7,26,16,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_FILTER_TITLE,48,23,206,100,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_FILTER_TITLE
+    LTEXT           "&Game:",IDC_STATIC,7,42,22,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_FILTER_GAME,48,39,206,100,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_FILTER_GAME
+    LTEXT           "&Artist:",IDC_STATIC,7,58,18,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_FILTER_ARTIST,48,55,206,100,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_FILTER_ARTIST
+    LTEXT           "&Publisher:",IDC_STATIC,7,74,32,8
+    COMBOBOX        IDC_COMBO_FILTER_PUBLISHER,48,71,206,100,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_FILTER_PUBLISHER
+    LTEXT           "Du&mper:",IDC_STATIC,7,90,28,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_FILTER_DUMPER,48,87,206,100,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_FILTER_DUMPER
+    LTEXT           "&Date:",IDC_STATIC,7,106,18,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_FILTER_DATE,48,103,206,100,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_FILTER_DATE
+    LTEXT           "&Comment:",IDC_STATIC,7,122,32,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_FILTER_COMMENT,48,119,206,100,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_FILTER_COMMENT
+    LTEXT           "&Length:",IDC_STATIC,7,138,25,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_FILTER_LENGTH,48,135,206,100,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_FILTER_LENGTH
+    LTEXT           "Fad&e:",IDC_STATIC,7,154,19,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_FILTER_FADE,48,151,206,100,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_FILTER_FADE
+    DEFPUSHBUTTON   "&Apply",IDC_BUTTON_FILTER_APPLY,262,7,50,14,WS_GROUP,0,
+                    HIDC_BUTTON_FILTER_APPLY
+    PUSHBUTTON      "&Remove",IDC_BUTTON_FILTER_REMOVE,262,24,50,14,0,0,
+                    HIDC_BUTTON_FILTER_REMOVE
+    PUSHBUTTON      "Close",IDCANCEL,262,45,50,14,0,0,HIDCANCEL
+    CONTROL         "Match &whole word only",IDC_CHECK_MATCH_WHOLE_WORD_ONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,262,70,
+                    87,10,0,HIDC_CHECK_MATCH_WHOLE_WORD_ONLY
+    CONTROL         "Match &case",IDC_CHECK_MATCH_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,262,83,53,10,0,
+                    HIDC_CHECK_MATCH_CASE
+    GROUPBOX        "Logical Relation",IDC_STATIC,262,98,63,26
+    CONTROL         "&And",IDC_RADIO_FILTER_AND,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,267,109,29,10,0,
+                    HIDC_RADIO_FILTER_AND
+    CONTROL         "&Or",IDC_RADIO_FILTER_OR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,298,109,23,10,0,HIDC_RADIO_FILTER_OR
+END
+
+IDD_TOOLBAR_CUSTOMIZE DIALOGEX 0, 0, 386, 129
+STYLE DS_MODALFRAME | DS_CENTER | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Customize Toolbar"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "A&vailable toolbar buttons:",IDC_STATIC,7,7,80,8
+    CONTROL         "List1",IDC_LIST_TC_LEFT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_GROUP | WS_TABSTOP,7,
+                    20,124,102,0,HIDC_LIST_TC_LEFT
+    PUSHBUTTON      "&Add ->",IDC_BUTTON_TC_ADD,139,48,50,14,WS_GROUP,0,
+                    HIDC_BUTTON_TC_ADD
+    PUSHBUTTON      "<- &Remove",IDC_BUTTON_TC_REMOVE,139,74,50,14,0,0,
+                    HIDC_BUTTON_TC_REMOVE
+    LTEXT           "Current &toolbar buttons:",IDC_STATIC,197,7,74,8
+    CONTROL         "List2",IDC_LIST_TC_RIGHT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,197,20,124,
+                    102,0,HIDC_LIST_TC_RIGHT
+    DEFPUSHBUTTON   "&Close",IDCANCEL,334,7,45,14,WS_GROUP,0,HIDCANCEL
+    PUSHBUTTON      "R&eset",IDC_BUTTON_TC_RESET,334,25,45,14,0,0,
+                    HIDC_BUTTON_TC_RESET
+    PUSHBUTTON      "Move &Up",IDC_BUTTON_TC_MOVEUP,334,78,45,14,0,0,
+                    HIDC_BUTTON_TC_MOVEUP
+    PUSHBUTTON      "Move &Down",IDC_BUTTON_TC_MOVEDOWN,334,96,45,14,0,0,
+                    HIDC_BUTTON_TC_MOVEDOWN
+END
+
+IDD_WARNING DIALOGEX 0, 0, 186, 95
+STYLE DS_MODALFRAME | DS_CENTER | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "WARNING"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,74,50,14,WS_GROUP,0,HIDOK
+    PUSHBUTTON      "Cancel",IDCANCEL,129,74,50,14,0,0,HIDCANCEL
+    ICON            "",IDC_STATIC_ICON,7,7,20,20
+    EDITTEXT        IDC_EDIT_WARNING,37,7,142,46,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL,0,HIDC_EDIT_WARNING
+    CONTROL         "&Do not show this warning again.",IDC_CHECK_NOMORE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,172,10,0,
+                    HIDC_CHECK_NOMORE
+END
+
+IDD_VIEW DIALOGEX 0, 0, 164, 147
+STYLE WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Window Elements",IDC_STATIC,0,0,87,113
+    CONTROL         "Title Bar",IDC_CHECK_TITLEBAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,6,10,42,10,0,HIDC_CHECK_TITLEBAR
+    CONTROL         "Menu",IDC_CHECK_MENU,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,20,34,10,0,HIDC_CHECK_MENU
+    CONTROL         "Tool Bar",IDC_CHECK_TOOLBAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,30,43,10,0,HIDC_CHECK_TOOLBAR
+    CONTROL         "Location Bar",IDC_CHECK_LOCATIONBAR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,40,56,10,0,
+                    HIDC_CHECK_LOCATIONBAR
+    CONTROL         "File List",IDC_CHECK_FILELIST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,50,39,10,0,HIDC_CHECK_FILELIST
+    CONTROL         "Play List",IDC_CHECK_PLAYLIST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,60,42,10,0,HIDC_CHECK_PLAYLIST
+    CONTROL         "Control Panel",IDC_CHECK_CPL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,70,58,10,0,HIDC_CHECK_CPL
+    CONTROL         "Visualizer",IDC_CHECK_VISUALIZATION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,80,45,10,0,
+                    HIDC_CHECK_VISUALIZATION
+    CONTROL         "Status Bar",IDC_CHECK_STATUSBAR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,90,49,10,0,
+                    HIDC_CHECK_STATUSBAR
+    GROUPBOX        "List Views",IDC_STATIC,0,114,87,33
+    CONTROL         "&Full row select",IDC_CHECK_FULLROWSELECT,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,6,124,61,10,0,
+                    HIDC_CHECK_FULLROWSELECT
+    CONTROL         "Show &grid lines",IDC_CHECK_SHOWGRIDLINES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,135,63,10,0,
+                    HIDC_CHECK_SHOWGRIDLINES
+    GROUPBOX        "Active Columns",IDC_STATIC,92,0,72,113
+    CONTROL         "File",IDC_CHECK_PC_FILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,97,10,27,10,0,HIDC_CHECK_PC_FILE
+    CONTROL         "Title",IDC_CHECK_PC_TITLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,97,20,29,10,0,HIDC_CHECK_PC_TITLE
+    CONTROL         "Game",IDC_CHECK_PC_GAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,97,30,35,10,0,HIDC_CHECK_PC_GAME
+    CONTROL         "Artist",IDC_CHECK_PC_ARTIST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,97,40,31,10,0,HIDC_CHECK_PC_ARTIST
+    CONTROL         "Publisher",IDC_CHECK_PC_PUBLISHER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,97,50,45,10,0,
+                    HIDC_CHECK_PC_PUBLISHER
+    CONTROL         "Dumper",IDC_CHECK_PC_DUMPER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,97,60,41,10,0,HIDC_CHECK_PC_DUMPER
+    CONTROL         "Date",IDC_CHECK_PC_DATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,97,70,31,10,0,HIDC_CHECK_PC_DATE
+    CONTROL         "Comment",IDC_CHECK_PC_COMMENT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,97,80,45,10,0,HIDC_CHECK_PC_COMMENT
+    CONTROL         "Length",IDC_CHECK_PC_LENGTH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,97,90,38,10,0,HIDC_CHECK_PC_LENGTH
+    CONTROL         "Fade",IDC_CHECK_PC_FADE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,97,100,32,10,0,HIDC_CHECK_PC_FADE
+    GROUPBOX        "Program Placement",IDC_STATIC,92,114,72,33
+    CONTROL         "&Taskbar",IDC_CHECK_TASKBAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,98,124,42,10,0,HIDC_CHECK_TASKBAR
+    CONTROL         "&System Tray",IDC_CHECK_SYSTRAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,98,135,55,10,0,
+                    HIDC_CHECK_SYSTRAY
+END
+
+IDD_MISC DIALOGEX 0, 0, 217, 108
+STYLE WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Automation",IDC_STATIC,0,0,106,43
+    CONTROL         "Auto-&load last playlist",IDC_CHECK_AUTOLOAD_PLAYLIST,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,10,81,
+                    10,0,HIDC_CHECK_AUTOLOAD_PLAYLIST
+    CONTROL         "Auto-&play last song",IDC_CHECK_AUTOPLAY_SONG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,20,75,10,0,
+                    HIDC_CHECK_AUTOPLAY_SONG
+    CONTROL         "Auto-size list &view columns",
+                    IDC_CHECK_AUTOSIZE_COLUMNS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,30,99,10,0,HIDC_CHECK_AUTOSIZE_COLUMNS
+    GROUPBOX        "Other",IDC_STATIC,0,45,106,63
+    CONTROL         "&Minimize to system tray",IDC_CHECK_MINIMIZETOSYSTRAY,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,55,87,
+                    10,0,HIDC_CHECK_MINIMIZETOSYSTRAY
+    CONTROL         "&Read ID666 tags",IDC_CHECK_READ_ID666_TAGS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,65,70,10,0,
+                    HIDC_CHECK_READ_ID666_TAGS
+    CONTROL         "&Save ID666 tags",IDC_CHECK_SAVE_ID666_TAGS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,75,69,10,0,
+                    HIDC_CHECK_SAVE_ID666_TAGS
+    CONTROL         "&Display tooltips",IDC_CHECK_DISPLAYTOOLTIPS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,85,63,10,0,
+                    HIDC_CHECK_DISPLAYTOOLTIPS
+    CONTROL         "&Use fast song seeking",IDC_CHECK_USEFASTSEEK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,95,86,10,0,
+                    HIDC_CHECK_USEFASTSEEK
+    GROUPBOX        "Sys&Tray Dbl-Click Command",IDC_STATIC,110,0,107,28
+    COMBOBOX        IDC_COMBO_SYSTRAYCMD,116,10,95,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP,0,
+                    HIDC_COMBO_SYSTRAYCMD
+END
+
+IDD_PROGRAM DIALOGEX 0, 0, 237, 122
+STYLE WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Setup",IDC_STATIC,0,0,109,63
+    PUSHBUTTON      "Add &Start Menu group",IDC_BUTTON_ADD_SMG,5,10,81,14,
+                    WS_GROUP,0,HIDC_BUTTON_ADD_SMG
+    PUSHBUTTON      "Add &Desktop icon",IDC_BUTTON_ADD_DI,5,26,81,14,0,0,
+                    HIDC_BUTTON_ADD_DI
+    PUSHBUTTON      "Add &QuickLaunch icon",IDC_BUTTON_ADD_QLI,5,42,81,14,0,
+                    0,HIDC_BUTTON_ADD_QLI
+    GROUPBOX        "Execution",IDC_STATIC,0,66,109,41
+    LTEXT           "&Thread priority:",IDC_STATIC,3,77,48,8
+    COMBOBOX        IDC_COMBO_MAIN_THREAD_PRIORITY,55,74,48,80,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,0,
+                    HIDC_COMBO_MAIN_THREAD_PRIORITY
+    LTEXT           "&Process priority:",IDC_STATIC,3,91,50,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_PROCESS_PRIORITY,55,89,48,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_PROCESS_PRIORITY
+    GROUPBOX        "Associated extensions",IDC_STATIC,113,0,124,107
+    LISTBOX         IDC_LIST_ASSOCEXT,118,10,71,92,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_GROUP | 
+                    WS_TABSTOP,0,HIDC_LIST_ASSOCEXT
+    PUSHBUTTON      "Select &all",IDC_BUTTON_SELALL,196,10,33,32,
+                    BS_MULTILINE,0,HIDC_BUTTON_SELALL
+    PUSHBUTTON      "Select &none",IDC_BUTTON_SELNONE,196,46,33,32,
+                    BS_MULTILINE,0,HIDC_BUTTON_SELNONE
+    CONTROL         "&Register file types on startup",IDC_CHECK_REGTYPES,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,113,112,
+                    105,10,0,HIDC_CHECK_REGTYPES
+END
+
+IDD_CPL DIALOGEX 0, 0, 446, 45
+STYLE WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+EXSTYLE WS_EX_CONTROLPARENT | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Tempo",IDC_STATIC,5,2,105,38,BS_CENTER
+    CONTROL         "Slider1",IDC_SLIDER_CPL_SPEED,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,8,11,100,18
+    CTEXT           "",IDC_STATIC_CPL_SPEED,48,30,20,8,SS_NOPREFIX
+    GROUPBOX        "Pitch",IDC_STATIC,115,2,105,38,BS_CENTER
+    CONTROL         "Slider2",IDC_SLIDER_CPL_PITCH,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,118,11,100,18
+    CTEXT           "",IDC_STATIC_CPL_PITCH,158,30,20,8,SS_NOPREFIX
+    GROUPBOX        "Main SS",IDC_STATIC,226,2,105,38,BS_CENTER
+    CONTROL         "Slider3",IDC_SLIDER_CPL_MAINSS,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,229,11,100,18
+    CTEXT           "",IDC_STATIC_CPL_MAINSS,269,30,20,8,SS_NOPREFIX
+    GROUPBOX        "Echo SS",IDC_STATIC,336,2,105,38,BS_CENTER
+    CONTROL         "Slider4",IDC_SLIDER_CPL_ECHOSS,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,339,11,100,18
+    CTEXT           "",IDC_STATIC_CPL_ECHOSS,374,30,30,8,SS_NOPREFIX
+END
+
+IDD_ACTIVEWALLPAPER DIALOGEX 0, 0, 237, 157
+STYLE WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_AW,0,0,237,102,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_LIST_AW
+    PUSHBUTTON      "&Configure",IDC_BUTTON_AW_CONFIGURE,0,111,50,14,0,0,
+                    HIDC_BUTTON_AW_CONFIGURE
+    PUSHBUTTON      "&About",IDC_BUTTON_AW_ABOUT,62,111,50,14,0,0,
+                    HIDC_BUTTON_AW_ABOUT
+    GROUPBOX        "Advanced Settings",IDC_STATIC,0,128,237,29
+    LTEXT           "&Thread priority:",IDC_STATIC,5,140,48,8
+    COMBOBOX        IDC_COMBO_AW_PRIORITY,56,138,63,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_AW_PRIORITY
+    CONTROL         "&Double buffer rendering",IDC_CHECK_AW_DBLBUF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,135,140,90,10,0,
+                    HIDC_CHECK_AW_DBLBUF
+END
+
+IDD_BETABOX DIALOG DISCARDABLE  0, 0, 203, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NON-PUBLIC BETA RELEASE"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "This is *only* a BETA release and should NOT be distributed in any form, way or shape, not even to your closest friends.\n\nDO YOU UNDERSTAND THE ABOVE STATEMENT?",
+                    IDC_STATIC,7,7,189,34
+    DEFPUSHBUTTON   "&NO",IDCANCEL,146,60,50,14
+    PUSHBUTTON      "&YES",IDOK,7,60,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_SUPER_JUKEBOX MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Save As &HTML...\tCtrl+H",    ID_FILE_SAVEASHTML
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties...\tCtrl+P",      ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Import ID666 Tags",          ID_FILE_IMPORTID666TAGS
+        MENUITEM "&Export ID666 Tags",          ID_FILE_EXPORTID666TAGS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Edit Item\tF2",              ID_EDIT_EDITITEM
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select A&ll\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "&Invert Selection\tCtrl+I",   ID_EDIT_INVERT_SELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM SEPARATOR
+        MENUITEM "&Go To...\tCtrl+G",           ID_EDIT_GOTO
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Title Bar\tCtrl+1",          ID_VIEW_TITLEBAR
+        MENUITEM "&Menu\tEsc",                  ID_VIEW_MENU
+        POPUP "Tool&bars"
+        BEGIN
+            MENUITEM "&Standard Buttons\tCtrl+2",   ID_VIEW_TOOLBARS_STANDARDBUTTONS
+
+            MENUITEM "&Location Bar\tCtrl+3",       ID_VIEW_TOOLBARS_SOURCEBAR
+
+            MENUITEM SEPARATOR
+            MENUITEM "&Text Labels",                ID_VIEW_TOOLBARS_TEXTLABELS
+
+            MENUITEM "&Pictures",                   ID_VIEW_TOOLBARS_PICTURES
+
+            MENUITEM "&Wrap",                       ID_VIEW_TOOLBARS_WRAP
+            MENUITEM SEPARATOR
+            MENUITEM "&Customize...\tCtrl+Alt+T",   ID_VIEW_TOOLBARS_CUSTOMIZE
+
+        END
+        MENUITEM "&Status Bar\tCtrl+8",         ID_VIEW_STATUSBAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Edit Filter...\tF4",         ID_VIEW_FILTER
+        MENUITEM "S&huffle\tF6",                ID_VIEW_SHUFFLE
+        MENUITEM "Resize &Columns\tF7",         ID_VIEW_RESIZECOLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh\tF5",                ID_VIEW_REFRESH
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Configure...\tF3",           ID_OPTIONS_CONFIGURE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Settings on Exit",      ID_OPTIONS_SAVESETTINGSONEXIT
+
+        MENUITEM "Save Settings &Now",          ID_OPTIONS_SAVESETTINGSNOW
+        MENUITEM "&Restore Default Settings...", 
+                                                ID_OPTIONS_RESTOREDEFAULTSETTINGS
+
+    END
+    POPUP "&Windows"
+    BEGIN
+        MENUITEM "&File List\tCtrl+4",          ID_WINDOWS_FILELIST
+        MENUITEM "&Play List\tCtrl+5",          ID_WINDOWS_PLAYLIST
+        MENUITEM "&Control Panel\tCtrl+6",      ID_WINDOWS_CONTROLPANEL
+        MENUITEM "&Visualizer\tCtrl+7",         ID_WINDOWS_VISUALIZER
+        MENUITEM SEPARATOR
+        MENUITEM "Tile &Horizontally",          ID_WINDOWS_TILEHORIZONTALLY
+        MENUITEM "&Tile Vertically",            ID_WINDOWS_TILEVERTICALLY
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents\tF1",               ID_HELP_CONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "&About Super Jukebox...\tAlt+F1", 
+                                                ID_HELP_ABOUTSUPERJUKEBOX
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR_SUPER_JUKEBOX ACCELERATORS DISCARDABLE 
+BEGIN
+    "1",            ID_VIEW_TITLEBAR,       VIRTKEY, CONTROL, NOINVERT
+    "1",            IDC_BUTTON_ADD,         VIRTKEY, ALT, NOINVERT
+    "1",            ID_MUTE0,               VIRTKEY, SHIFT, NOINVERT
+    "2",            ID_VIEW_TOOLBARS_STANDARDBUTTONS, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    "2",            IDC_BUTTON_REMOVE,      VIRTKEY, ALT, NOINVERT
+    "2",            ID_MUTE1,               VIRTKEY, SHIFT, NOINVERT
+    "3",            ID_VIEW_TOOLBARS_SOURCEBAR, VIRTKEY, CONTROL, NOINVERT
+    "3",            IDC_BUTTON_ADDALL,      VIRTKEY, ALT, NOINVERT
+    "3",            ID_MUTE2,               VIRTKEY, SHIFT, NOINVERT
+    "4",            ID_WINDOWS_FILELIST,    VIRTKEY, CONTROL, NOINVERT
+    "4",            IDC_BUTTON_REMOVEALL,   VIRTKEY, ALT, NOINVERT
+    "4",            ID_MUTE3,               VIRTKEY, SHIFT, NOINVERT
+    "5",            ID_WINDOWS_PLAYLIST,    VIRTKEY, CONTROL, NOINVERT
+    "5",            IDC_BUTTON_PLAY,        VIRTKEY, ALT, NOINVERT
+    "5",            ID_MUTE4,               VIRTKEY, SHIFT, NOINVERT
+    "6",            ID_WINDOWS_CONTROLPANEL, VIRTKEY, CONTROL, NOINVERT
+    "6",            IDC_BUTTON_PAUSE,       VIRTKEY, ALT, NOINVERT
+    "6",            ID_MUTE5,               VIRTKEY, SHIFT, NOINVERT
+    "7",            ID_WINDOWS_VISUALIZER,  VIRTKEY, CONTROL, NOINVERT
+    "7",            IDC_BUTTON_STOP,        VIRTKEY, ALT, NOINVERT
+    "7",            ID_MUTE6,               VIRTKEY, SHIFT, NOINVERT
+    "8",            ID_VIEW_STATUSBAR,      VIRTKEY, CONTROL, NOINVERT
+    "8",            IDC_BUTTON_PREVIOUS,    VIRTKEY, ALT, NOINVERT
+    "8",            ID_MUTE7,               VIRTKEY, SHIFT, NOINVERT
+    "9",            IDC_BUTTON_NEXT,        VIRTKEY, ALT, NOINVERT
+    "9",            ID_MUTEALL,             VIRTKEY, SHIFT, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_EDIT_GOTO,           VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_FILE_SAVEASHTML,     VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_EDIT_INVERT_SELECTION, VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_FOCUSLOCATION,       VIRTKEY, ALT, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PROPERTIES,     VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_VIEW_TOOLBARS_CUSTOMIZE, VIRTKEY, CONTROL, ALT, 
+                                                    NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_VIEW_MENU,           VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP_CONTENTS,       VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP_ABOUTSUPERJUKEBOX, VIRTKEY, ALT, NOINVERT
+    VK_F2,          ID_EDIT_EDITITEM,       VIRTKEY, NOINVERT
+    VK_F3,          ID_OPTIONS_CONFIGURE,   VIRTKEY, NOINVERT
+    VK_F4,          ID_VIEW_FILTER,         VIRTKEY, NOINVERT
+    VK_F5,          ID_VIEW_REFRESH,        VIRTKEY, NOINVERT
+    VK_F6,          ID_VIEW_SHUFFLE,        VIRTKEY, NOINVERT
+    VK_F7,          ID_VIEW_RESIZECOLUMNS,  VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            IDM_ALWAYSONTOP,        VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SUPER_JUKEBOX       ICON    DISCARDABLE     "res\\Super Jukebox.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\SNCart.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_COLOR_ICONS         BITMAP  DISCARDABLE     "res\\ColorIcons.bmp"
+IDB_GRAY_ICONS          BITMAP  DISCARDABLE     "res\\GrayIcons.bmp"
+IDB_DOWNUPARROWS        BITMAP  DISCARDABLE     "res\\DownUpArrows.bmp"
+IDB_ONEUPCOLOR          BITMAP  DISCARDABLE     "res\\oneup_color.bmp"
+IDB_ONEUPGRAY           BITMAP  DISCARDABLE     "res\\oneup_gray.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PLAYER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 241
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_VISUALIZATION, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_TOOLBAR_CUSTOMIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 379
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_WARNING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_BETABOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_VISUALIZATION DLGINIT
+BEGIN
+    IDC_COMBO_VIS_MODE, 0x403, 13, 0
+0x734f, 0x6963, 0x6c6c, 0x736f, 0x6f63, 0x6570, "\000" 
+    IDC_COMBO_VIS_MODE, 0x403, 13, 0
+0x7053, 0x6365, 0x7274, 0x6d6f, 0x7465, 0x7265, "\000" 
+    IDC_COMBO_VIS_PRIORITY, 0x403, 5, 0
+0x6449, 0x656c, "\000" 
+    IDC_COMBO_VIS_PRIORITY, 0x403, 7, 0
+0x6f4c, 0x6577, 0x7473, "\000" 
+    IDC_COMBO_VIS_PRIORITY, 0x403, 13, 0
+0x6542, 0x6f6c, 0x2077, 0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_VIS_PRIORITY, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_VIS_PRIORITY, 0x403, 13, 0
+0x6241, 0x766f, 0x2065, 0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_VIS_PRIORITY, 0x403, 8, 0
+0x6948, 0x6867, 0x7365, 0x0074, 
+    IDC_COMBO_VIS_PRIORITY, 0x403, 14, 0
+0x6954, 0x656d, 0x4320, 0x6972, 0x6974, 0x6163, 0x006c, 
+    0
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,3,0,0
+ PRODUCTVERSION 3,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "The time to hesitate is through...\0"
+            VALUE "CompanyName", "Costel Marius Fodor\0"
+            VALUE "FileDescription", "Super Nintendo SPC Player\0"
+            VALUE "FileVersion", "3.3\0"
+            VALUE "InternalName", "Super Jukebox\0"
+            VALUE "LegalCopyright", "Copyright © Costel Marius Fodor, 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Super Jukebox.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Super Jukebox\0"
+            VALUE "ProductVersion", "3.3\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_NAME            "Super Jukebox"
+    IDC_BUTTON_ADD          "Adds the selected file list entries into the playlist. (Alt+1)"
+    IDC_BUTTON_REMOVE       "Removes the selected playlist entries. (Alt+2)"
+    IDC_BUTTON_ADDALL       "Adds all entries in the file list into the playlist. (Alt+3)"
+    IDC_BUTTON_REMOVEALL    "Removes all the playlist entries. (Alt+4)"
+    IDC_BUTTON_PLAY         "Plays the currently selected list entry. (Alt+5)"
+    IDC_BUTTON_PAUSE        "Pauses the currently playing song. (Alt+6)"
+    IDC_BUTTON_STOP         "Stops the currently playing song. (Alt+7)"
+    IDC_BUTTON_PREVIOUS     "Moves the marker upward by one in the playlist. (Alt+8)"
+    IDC_BUTTON_NEXT         "Moves the marker downward by one in the playlist. (Alt+9)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Begins a new playlist. (Ctrl+N)"
+    ID_FILE_OPEN            "Opens an existing playlist. (Ctrl+O)"
+    ID_FILE_SAVE            "Saves the currently open playlist. (Ctrl+S)"
+    ID_FILE_SAVE_AS         "Saves the currently open playlist under a specific name."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_PROPERTIES      "View and edit the properties for the currently open playlist. (Ctrl+P)"
+    ID_FILE_EXIT            "Exits the program."
+    ID_EDIT_GOTO            "Positions the selection at the specified playlist item. (Ctrl+G)"
+    ID_VIEW_REFRESH         "Refreshes the program by reloading the file list and repainting the window. (F5)"
+    ID_OPTIONS_CONFIGURE    "Allows you to change the configuration for the program. (F3)"
+    ID_HELP_CONTENTS        "Displays the help contents window. (F1)"
+    ID_HELP_ABOUTSUPERJUKEBOX 
+                            "Displays some information regarding Super Jukebox. (Alt+F1)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Deletes the currently selected playlist items."
+    ID_EDIT_COPY            "Copies the selected playlist items to the clipboard. (Ctrl+C)"
+    ID_EDIT_CUT             "Cuts the selected playlist items and moves them to the clipboard. (Ctrl+X)"
+    ID_EDIT_FIND            "Finds a specific playlist item. (Ctrl+F)"
+    ID_EDIT_PASTE           "Inserts the items on the clipboard at the insertion point in the playlist. (Ctrl+V)"
+    ID_EDIT_SELECT_ALL      "Selects all the list view items. (Ctrl+A)"
+    IDS_FILE_MENU           "Contains commands for working with the playlist."
+    IDS_EDIT_MENU           "Contains commands for working with playlist items."
+    IDS_VIEW_MENU           "Contains commands for working with the program view."
+    IDS_OPTIONS_MENU        "Contains commands for adjusting the options for the program."
+    IDS_HELP_MENU           "Contains commands for help features."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_STATUSBAR       "Shows or hides the status bar. (Ctrl+8)"
+    ID_VIEW_TOOLBARS_STANDARDBUTTONS 
+                            "Shows or hides the Standard Buttons toolbar. (Ctrl+2)"
+    ID_VIEW_TOOLBARS_TEXTLABELS 
+                            "Displays Standard Buttons toolbar with text labels."
+    ID_VIEW_TOOLBARS_PICTURES 
+                            "Displays Standard Buttons toolbar with iconic pictures."
+    ID_EDIT_DELETE          "Deletes all selected playlist items. (Del)"
+    ID_VIEW_FILTER          "Edit the playlist filter. (F4)"
+    ID_VIEW_TOOLBARS_CUSTOMIZE 
+                            "Customly add or remove buttons in the Standard Buttons toolbar. (Ctrl+Alt+T)"
+    ID_EDIT_EDITITEM        "Edit the fileds for the currently selected playlist item. (F2)"
+    ID_VIEW_TITLEBAR        "Shows or hides the window title bar. (Ctrl+1)"
+    ID_VIEW_MENU            "Shows or hides the top menu. (Esc)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPTIONS_SAVESETTINGSONEXIT 
+                            "Check to have the program settings saved on exit."
+    ID_OPTIONS_SAVESETTINGSNOW "Save program settings right now."
+    ID_OPTIONS_RESTOREDEFAULTSETTINGS 
+                            "Restore all program settings to factory defaults."
+    ID_WINDOWS_FILELIST     "Shows or hides the file list view. (Ctrl+4)"
+    ID_WINDOWS_PLAYLIST     "Shows or hides the play list view. (Ctrl+5)"
+    ID_WINDOWS_CONTROLPANEL "Shows or hides the music control panel. (Ctrl+6)"
+    ID_WINDOWS_VISUALIZER   "Shows or hides the visualization window. (Ctrl+7)"
+    ID_WINDOWS_TILEHORIZONTALLY "Arranges the list views as horizontal."
+    ID_WINDOWS_TILEVERTICALLY "Arranges the list views as vertical."
+    ID_VIEW_SHUFFLE         "Shuffles the playlist entries in random order. (F6)"
+    ID_FILE_IMPORTID666TAGS "Reloads the ID666 tags of songs in the playlist from the SPC files."
+    ID_VIEW_TOOLBARS_SOURCEBAR "Shows or hides the Location Bar. (Ctrl+3)"
+    ID_VIEW_RESIZECOLUMNS   "Resizes the list view columns to fit all strings. (F7)"
+    ID_FILE_EXPORTID666TAGS "Saves the ID666 tags of songs in the playlist to the SPC files."
+    ID_VIEW_TOOLBARS_WRAP   "Check to have the toolbar wrap its buttons."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_BUTTON_WAVDUMP      "Toggle switch for dumping sound output to WAV files."
+    IDC_BUTTON_AW           "Toggle switch for enabling/disabling the Active Wallpaper."
+    IDC_BUTTON_FILTERVIEW   "Applies or removes the filter to the playlist."
+    IDC_BUTTON_LAYOUT       "Switch between horizontal and vertical list view layouts."
+    IDC_BUTTON_VISMODE      "Switch between Oscilloscope and Spectrometer visualization modes."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_SAVEASHTML      "Saves the currently open playlist as an HTML file. (Ctrl+H)"
+    ID_EDIT_INVERT_SELECTION 
+                            "Inverts the selection of list view items. (Ctrl+I)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WINDOWS_MENU        "Contains commands for working with the windows."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

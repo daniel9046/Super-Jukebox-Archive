@@ -1,0 +1,5 @@
+[DEFAULT]
+BASEURL=http://superjukebox.zophar.net/
+
+[InternetShortcut]
+URL=http://superjukebox.zophar.net/
