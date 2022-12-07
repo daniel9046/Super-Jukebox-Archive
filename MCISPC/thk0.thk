@@ -1,0 +1,41 @@
+enablemapdirect1632=true;
+preload32=true;
+
+typedef unsigned short WORD;
+typedef unsigned long DWORD;
+typedef char * LPCSTR;
+typedef struct{
+	DWORD dwCallback;
+	DWORD dwEngine;
+	DWORD dwSampleRate;
+	DWORD dwSampleSize;
+	DWORD dwChannels;
+	DWORD dwVolumeMultiplier;
+	DWORD dwPriorityClass;
+	DWORD dwSongLength;
+}MCI_CONFIG_PARMS,*PMCI_CONFIG_PARMS,*LPMCI_CONFIG_PARMS;
+
+DWORD DisplayConfigDlg(DWORD,MCI_CONFIG_PARMS *lpVoid)
+{
+	lpVoid=inout;
+}
+DWORD ReadRegistrySettings(MCI_CONFIG_PARMS *lpVoid)
+{
+	lpVoid=output;
+}
+DWORD WriteRegistrySettings(MCI_CONFIG_PARMS *lpVoid);
+DWORD InitZSPC();
+void DeinitZSPC();
+DWORD PlayZSPC(LPCSTR);
+void PauseZSPC();
+void StopZSPC();
+DWORD InitSPC(DWORD,DWORD,DWORD,DWORD,DWORD);
+void DeinitSPC(DWORD);
+void RestoreSPC();
+DWORD LoadSPC(LPCSTR);
+void PlaySPC();
+void PauseSPC();
+void StopSPC();
+DWORD SetPriorityClass(DWORD,DWORD);
+DWORD GetPriorityClass(DWORD);
+DWORD GetCurrentProcess();
