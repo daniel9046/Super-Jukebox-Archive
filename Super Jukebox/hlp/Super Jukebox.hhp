@@ -1,0 +1,13 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Super Jukebox.chm
+Contents file=Table of Contents.hhc
+Default topic=Introduction.htm
+Display compile progress=Yes
+Full-text search=Yes
+Language=0x409 English (United States)
+Title=Super Jukebox Help
+
+
+[INFOTYPES]
+

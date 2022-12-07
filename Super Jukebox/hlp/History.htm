@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>History</Title>
+</HEAD>
+<BODY>
+<h1>History</h1>
+<hr>
+<b>v3.3 (January 16, 2005)</b>
+<ul>
+<li>Added a new version of UNRAR.DLL, v3.14, for support for .RSN files.
+</ul>
+<b>v3.2 (January 5, 2005)</b>
+<ul>
+<li>Added a new version of SNESAPU.DLL, v2.1, that fixes some of the hang-ups in Windows XP.
+</ul>
+<b>v3.1 (February 26, 2001)</b>
+<ul>
+<li>During the last release (version 3.0) I lost about two weeks worth of work in my source code, since then I have been re-doing that work over again, additionally I have also fixed some bugs from the last version and have even added some new features.
+<li>This version is what version 3.0 was supposed to be (hopefully).
+</ul>
+<b>v3.0 (December 14, 2000)</b>
+<ul>
+<li>Rewrote the entire program from scratch, the end.
+<li>Here then, I withdraw my hands from the keyboard.
+</ul>
+<b>v2.9 (September 2, 2000)</b>
+<ul>
+<li>Fixed a bug that prevented Super Jukebox from reading ID666 tags from SPC files that were located in the root directory of a drive.
+<li>Fixed a bug that made the timer message handler stall every once in a while thereby making the status bar update stall as well.
+<li>Added a new visualization gauge for the pitch rate parameter of the SPC700/DSP channels. This basically indicates what musical note is playing, but rather graphically.
+<li>Changed the status bar layout to display some additional information, such as a graphical progress bar for the currently playing song and descriptions for the menu items.
+<li>Added the ability to switch between buttons with text labels and buttons with pictures. Special thanks to Datschge for designing these bitmaps.
+<li>Added an option to limit the size of the frequency spectrum for the Spectrometer using a percentage representative of the current sample rate for the player.
+<li>Made it so that the program settings are saved to the registry every time you close the Configuration dialog box by clicking on OK.
+<li>Added the ability to hide the window controls, so you can see more of your precious skins.
+<li>Made it possible to seek to a specific position in the song by moving the mouse over the status time bar and clicking on it, this works both when the song is playing or not. Note, however, that some songs may sound somewhat screwy after you seek in it, but this is a matter of the emulation and is most likely not even a bug. Also note, that due to an apparent bug with Windows (caused by capturing the mouse input), if you have the mouse cursor on the status time bar that the accelerator shortcuts will not work, so just move the mouse off of the status time bar.
+<li>Added the ability for the installation program to detect which directory the previous installation was installed to and use that as the default choice, of course this won't work the first time you run it since the last version never saved that information.
+<li>Added a new "Edit With Notepad" entry to the Explorer context menu for PL files, since they are just plain text files.
+</ul>
+
+<b>v2.8 (August 26, 2000)</b>
+<ul>
+<li>Fixed a nasty little memory leak in the visualization routine that caused Windows resources to be depleted rather quickly and then crashing Windows. I am truly sorry for all the people who were affected by this, but the last version I released in a rush.
+<li>Added an option to the Configuration dialog box to remove the title bar from the main window.
+<li>Changed the code to update the visualization in a separate thread instead of from the timer message handler.
+<li>Added a frequency spectrum analyzer as an alternative to the visualization. Special thanks to Murphy McCauley for his Fast Fourier Transform DLL.
+<li>Added the ability to adjust the update rate for the visualization.
+<li>Added the ability to adjust the priority for the visualization thread.
+<li>Added context sensitive help to the playlist and song properties dialog boxes.
+<li>Changed the oscilloscope renderer so that the wave is now being scaled to fit the window, instead of the window being scaled to fit the wave. This gives it a cleaner look.
+<li>Updated the documentation for SNESAmp.DLL from text to HTML.
+</ul>
+
+<b>v2.7 (August 10, 2000)</b>
+<ul>
+<li>And now, ladies and gentlemen, the moment you've all been waiting for, without further adue, I give you, VISUALIZATION! Special thanks to none other than Anti Resonance for helping to get this stuff on.
+<li>Removed the shity support I had for archives containing sub-directories, it's just too damn tricky, so now when you open an archive with sub-directories it will list all the files in it at once without any differentiation of their location within the archive.
+<li>Added and removed some functions from the SNESAmp DLL, read the documentation for all the details.
+<li>Now rounding up the song lengths specified in ID666 tags, instead of just discarding the fractional second.
+<li>Added a brand new menu.
+<li>Removed all but the navigation and player buttons from the main window.
+<li>Moved all the buttons that I removed from the main window into menus.
+<li>Added 4 preset layout schemes for the window controls, and a 'Manual' selection for freehand adjustment.
+<li>Added a dialog box to allow you to go directly to a specific song by specifying it's number.
+<li>Cleaned up some of the GUI functionality some more.
+<li>Well, and a really lot more, you'll figure it out!
+</ul>
+
+<b>v2.6 (July 24, 2000)</b>
+<ul>
+<li>Made the program window redraw flicker less when you adjust the list views or buttons by not erasing over the children controls.
+<li>Fixed a slight problem when you tried to open a playlist that does not specify a skin file and the program tried to load one anyway, thereby trying to load a file with no name.
+<li>Finally took the time to see if I could adapt the SNESAmp source code into a fully integrated, stand alone DLL, and am glad to say that I have. This has given me much better control/access over the emulation.
+<li>I have now written my own sound output streamer so OUT_WAVE.DLL from WinAMP is not required anymore, hooray!
+<li>I am now releasing a new SPC playing DLL that is based on SNESAmp, with some really nice features, much better than SPC700EMU.DLL which I am still keeping around for the MCI driver.
+<li>Removed the 'Detect Silence' option and replaced it with 'Detect Inactivity', this is much better because it checks to see if there is anymore activity inside the SPC700/DSP chip which is much more reliable than checking to see what the current loudness is.
+<li>Changed the title bar order to display the currently playing song first, the playlist name second and the program name last. :-( I suppose this is more ideal considering how small the taskbar buttons are.
+<li>Made clicking the 'Next' button select a random song if the 'Randomize' option is selected in the Playlist settings. This one is especially for Datschge, the guy can be quite persistent. :-)
+</ul>
+
+<b>v2.5 (July 11, 2000)</b>
+<ul>
+<li>Changed all the time formats used in the program and the playlists from plain seconds to d:h:m:s, where d is days, h is hours, m is minutes and s is seconds. Note that only the smallest field greater than 0 and all fields beneath it are listed.
+<li>Now displaying the name of the currently playing song in the program title bar.
+<li>Fixed a slight problem where whenever a song started to play the wave out volume was being reset to the value it was at when Super Jukebox was started.
+<li>Made it possible to move and resize the list views and the buttons interactively, place the mouse cursor at the top or left edge of one of the list views or the buttons until you see the double pointed resizing cursor and then drag the mouse to move them, or place the mouse cursor at the bottom or right edges to resize them.
+<li>Added an option to allow Super Jukebox to automatically load the last opened playlist and start playing the first song.
+<li>Changed the minimum allowed length from -1 to 0, now 0 means infinite, I suppose that makes more sense than -1.
+<li>Added an option to allow Super Jukebox to automatically adjust the size of the playlist columns to fit the widest text string in that column, this is actually a very useful feature.
+<li>Now opening playlist files in binary mode instead of text, some playlist files out there only have a linefeed at the end of a line and no carriage-return, which confused Super Jukebox, now it's fixed.
+<li>Made the uninstall program able to run on systems with Shell32.dll files of version less than 4.71.
+<li>As always several other various cleanups.
+</ul>
+
+<b>v2.4 (June 19, 2000)</b>
+<ul>
+<li>Made the installation program and the Super Jukebox itself more adaptable to run on Windows 95 and with a Shell32.dll file of version less than 4.71, if you were one of the people that wrote to me about not being able to install and/or run Super Jukebox on your computer and this version works, then please write me to let me know that. Thank you.
+</ul>
+
+<b>v2.3 (June 15, 2000)</b>
+<ul>
+<li>Changed the playlist format to include the full name of an SPC file along with it's displayed name, incase the displayed name does not specify the extension.
+<li>Fixed a slight problem where the playlist context menu was appearing way off to the left when the list view was scrolled far off to the right while using the Applications key.
+<li>Added a new button called 'Refresh', click it to refresh the program.
+<li>Added a small up and down arrow to the list view column headers that tell you which column and in which order the list is sorted.
+<li>Added a new button called 'Help', and with it added an entire Help system, I therefore have gotten rid of the ReadMe.txt file, hooray!
+<li>Added context sensitive popup Help to the installation program for the various dialog box controls on it.
+</ul>
+
+<b>v2.2 (June 2, 2000)</b>
+<ul>
+<li>So many changes in this version I hardly know where to start...
+<li>Fixed the problem that some people have been reporting of Super Jukebox not being able to play their SPC files or openning their archives. This was because their "Hide file extensions for known file types" setting in the "Start->Settings->Folder Options->View" applet was turned on, which made Super Jukebox display the names of files without their extensions, therefore making it impossible to properly process the files. Now Super Jukebox knows what the current setting is and can accommodate properly.
+<li>Added support for ID666 tagged files. Note that no modifications to SPC files is supported, instead you can save them in playlists.
+<li>Added a new button called 'New', click it to begin a new playlist.
+<li>Added a lot more columns to the playlist view for the different ID666 fields.
+<li>Added the ability to sort the playlist by clicking on the various column headers, they toggle between ascending and descending order.
+<li>Added support for the special Applications key on Win95 keyboards to bring up the context menu for the playlist entries.
+<li>Revamped the configuration dialog box extensively, read the documentation for the different options.
+<li>Added a new button called 'Find...', click it to bring up the Find dialog box. Read the documentation for its usage.
+<li>Fixed a slight problem with the skin support.
+<li>Included the new SNESAmp v1.2 player.
+<li>Basically a ton of new features and improvements, I hope you like them.
+</ul>
+
+<b>v2.1 (April 15, 2000)</b>
+<ul>
+<li>Removed the Snes9X and ZSNES engines from Super Jukebox, and replaced them with Anti Resonance's much better engine. Note, however, that the MCI driver remains unchanged.
+<li>Changed the configuration dialog box to accommodate the new SPC700 engine.
+<li>Now listing files with extensions SP0 through SP9, and the old SPC.
+<li>Made the Super Jukebox window sizeable. The size and position are saved and restored everytime you run Super Jukebox.
+<li>Some more clean ups and fixes.
+</ul>
+
+<b>v2.0 (November 23, 1999)</b>
+<ul>
+<li>Added the options to have the installation program create a shortcut to Super Jukebox on the Desktop and to create a program group in the Start Menu.
+<li>Now you can browse archives containing sub-directories as if they were ordinary directories. Again, I should have done this a long time ago, but it DID require quite a few changes.
+<li>I had hoped version 2.0 to be a bit more spectacular, but then I never even thought I'd get to version 2.0, anyway it should be pretty much finished now. :-) Thanks for hanging in there.
+</ul>
+
+<b>v1.9 (November 17, 1999)</b>
+<ul>
+<li>Now displaying the names and icons for files, folders and drives as assigned by the shell, my apologies for not doing this in the first place, I guess I must be sloppy. :-( But after all, Super Jukebox is only my second Windows program.
+</ul>
+
+<b>v1.8 (November 16, 1999)</b>
+<ul>
+<li>Fixed up a few minor bugs, and cleaned up the source code some more.
+<li>Made the handling of playlists more portable. When looking for the skin and the SPC files, it first looks in the directory specified in the playlist, then in the same directory as the playlist and last, in the same directory as the program.
+<li>Added a 'Statistics...' command to the playlist context menu, which is nothing more than a shortcut for the 'About...' button. :-)
+</ul>
+
+<b>v1.7 (November 9, 1999)</b>
+<ul>
+<li>Due to request, I have finally added support for...tada..."skins"! Let me know what you think.
+</ul>
+
+<b>v1.6 (November 8, 1999)</b>
+<ul>
+<li>Made the installation program more flexible as to what it does.
+<li>Added support to the MCI driver for the ZSNES WinAMP plugin. You can specify which engine you want to use by selecting 'Properties' on the 'Device' menu in Media Player.
+<li>Added support for archives that contain SPCs within sub-directories.
+<li>Now extracting SPCs from archives to temporary filenames, so there's no chance of file conflicts.
+<li>The hilite bar in the left pane behaves a little more intelligently, such as automatically positioning itself on the parent direcotry when you switch into a direcotry and repositioning itself to the current directory once you go back out to its parent.
+<li>Added icons to the list views. Note, however, that these aren't the actual icons as assigned by the shell, but rather are hardcoded into the program. If anybody can tell me how to obtain the actual icons for files and directories as assigned by the shell I'd be very grateful.
+<li>Added a context menu for the playlist entries, click on a playlist entry with the right mouse button to bring it up.
+<li>Now that new additions are starting to come to an end and things are working well, I've taken the time to clean up the source code considerably. I would really like to thank all the people who took the time to write me, because of you I've been able to make this program much better than I ever could have on my own.
+</ul>
+
+<b>v1.5 (November 4, 1999)</b>
+<ul>
+<li>Made the installation program a little more robust, checks for more errors.
+<li>Removed dependency on DCOM in the installation program, should help people with Windows 95 and no Internet Explorer. Let me know how this works, in particular the 'Browse...' button.
+<li>Added some specific support for systems that have more than one mixer driver.
+<li>Now it only reminds you that a playlist needs to be saved when it actually contains some songs.
+<li>Some archives contain SPCs with the read-only attribute set, this made it impossible for Super Jukebox to delete them after extracting them, so now after extracting a file it sets its attributes to normal so it can delete it.
+</ul>
+
+<b>v1.4 (October 29, 1999)</b>
+<ul>
+<li>Added an Uninstall.exe program for removing Super Jukebox, now the only file you will have to remove manually is Uninstall.exe. Before this was done with Super Jukebox.exe, but that left Super Jukebox.exe and all related DLL files undeleted.
+<li>Added the ability to detect when a song has ended, and then proceed automatically. I have tested this on 8 songs, but let me know how it works. OK, la-li?
+<li>Now extracting SPCs from archives into the TEMP directory instead of the current directory, useful if you have your archives on CD-ROMs.
+<li>Now saving the current directory in the registry upon exit, and restores it upon startup.
+</ul>
+
+<b>v1.3 (October 26, 1999)</b>
+<ul>
+<li>Added the ability to play songs randomly, for a little more excitement.
+<li>Added some statistical information for the playlist in the 'About...' dialog box.
+<li>Now displaying the drive labels in the left pane.
+<li>Fixed a minor issue with the MCI driver.
+</ul>
+
+<b>v1.2 (October 25, 1999)</b>
+<ul>
+<li>Added the ability to fade-out a song before advancing to the next one.
+<li>Added a StopSPC function to SPC700EMU.DLL, before this was done with PauseSPC and RestoreSPC.
+</ul>
+
+<b>v1.1 (October 20, 1999)</b>
+<ul>
+<li>Due to request, I have added support for ACE archives.
+<li>Added support for the ZSNES WinAMP plugin. This is totally unofficial, I hope nobody minds. :-) This is helpful because the Snes9X engine doesn't play songs from a few games, such as Lagoon.
+</ul>
+
+<b>v1.0 (October 5, 1999)</b>
+<ul>
+<li>First public release.
+</ul>
+</BODY>
+</HTML>
