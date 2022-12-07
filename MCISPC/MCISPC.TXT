@@ -1,0 +1,59 @@
+The MCISPC.DRV driver pretty much supports all the standard MCI functionality. Only one additional
+MCI command has been added:
+
+MCI_CONFIG
+
+This MCI command configures the SPC700 engine. Usually these settings are read from the registry,
+but if you use this command you can overide those defaults. The changes to settings made with
+this command do not get saved in the registry, they are only valid until you close the driver.
+
+Parameters     Description
+----------------------------------------------------------------------
+lParam2        Specifies a far pointer to an MCI_CONFIG_PARMS data structure.
+
+Return Value
+Returns zero if successful. Otherwise, it returns an MCI error code.
+
+#########################################################################################
+
+The MCI_CONFIG_PARMS structure contains parameters for the MCI_CONFIG message.
+
+typedef struct {
+	DWORD dwCallback;
+        DWORD dwEngine;
+	DWORD dwSampleRate;
+	DWORD dwSampleSize;
+	DWORD dwChannels;
+	DWORD dwVolumeMultiplier;
+	DWORD dwPriorityClass;
+	DWORD dwSongLength;
+} MCI_CONFIG_PARMS;
+
+Fields
+----------------------------------------------------------------
+The MCI_CONFIG_PARMS structure contains the following fields:
+
+dwCallback
+	The low-order word specifies a window handle used for the MCI_NOTIFY flag.
+
+dwEngine
+        Specifies which SPC700 engine to use. Specify 0 for SNES9X or 1 for ZSNES.
+
+dwSampleRate
+	Specifies the sample rate of the sound in Hertz.
+	
+dwSampleSize
+	Specifies the size of the samples, either 8 or 16 bits.
+	
+dwChannels
+	Specifies the number of sound channels, either 1 for mono or 2 for stereo.
+	
+dwVolumeMultiplier
+	Specifies the volume multiplier. Either 1, 2, 4, or 8, anything else defaults to 1.
+	
+dwPriorityClass
+	Specifies the priority class of the process. Either IDLE_PRIORITY_CLASS,
+        NORMAL_PRIORITY_CLASS, HIGH_PRIORITY_CLASS, or REALTIME_PRIORITY_CLASS.
+	
+dwSongLength
+	Specifies the length of the song, in seconds.

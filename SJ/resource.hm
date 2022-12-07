@@ -1,0 +1,14 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by SJ.rc
+//
+#define HIDCANCEL                       0x80660002    // IDD_DIALOG1
+#define HIDC_BUTTON1                    0x806603e9    // IDD_DIALOG1
+#define HIDC_CHECK1                     0x806603eb    // IDD_DIALOG1
+#define HIDC_CHECK2                     0x806603ec    // IDD_DIALOG1
+#define HIDC_CHECK3                     0x806603ed    // IDD_DIALOG1
+#define HIDC_CHECK4                     0x806603ee    // IDD_DIALOG1
+#define HIDC_CHECK5                     0x806603ef    // IDD_DIALOG1
+#define HIDC_CHECK6                     0x806603f0    // IDD_DIALOG1
+#define HIDC_EDIT1                      0x806603e8    // IDD_DIALOG1
+#define HIDC_PROGRESS1                  0x806603ea    // IDD_DIALOG1
+#define HIDOK                           0x80660001    // IDD_DIALOG1

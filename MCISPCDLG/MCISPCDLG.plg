@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MCISPCDLG - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"c:\mcispcdlg\Release/Mcispcdlg.res" /d "NDEBUG" "H:\SJ\MCISPCDLG\Mcispcdlg.rc"" 
+Creating temporary file "c:\windows\TEMP\RSPA290.TMP" with contents
+[
+/nologo /MT /W3 /GX /Ox /Ob2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MCISPCDLG_EXPORTS" /Fp"c:\mcispcdlg\Release/MCISPCDLG.pch" /YX /Fo"c:\mcispcdlg\Release/" /Fd"c:\mcispcdlg\Release/" /FD /c 
+"H:\SJ\MCISPCDLG\Mcispcdlg.cpp"
+"H:\SJ\MCISPCDLG\Mixer.cpp"
+]
+Creating command line "cl.exe @c:\windows\TEMP\RSPA290.TMP" 
+Creating temporary file "c:\windows\TEMP\RSPA291.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib thunk32.lib winmm.lib /nologo /dll /incremental:no /pdb:"c:\mcispcdlg\Release/MCISPCDLG.pdb" /machine:I386 /out:"c:\mcispcdlg\Release/MCISPCDLG.dll" /implib:"c:\mcispcdlg\Release/MCISPCDLG.lib" 
+c:\mcispcdlg\Release\Mcispcdlg.obj
+c:\mcispcdlg\Release\Mixer.obj
+".\thk0-32.obj"
+c:\mcispcdlg\Release\Mcispcdlg.res
+.\SPC700EMU.lib
+]
+Creating command line "link.exe @c:\windows\TEMP\RSPA291.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+Mcispcdlg.cpp
+Mixer.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+MCISPCDLG.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

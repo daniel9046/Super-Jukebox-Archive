@@ -1,0 +1,51 @@
+#define STRICT
+#include <windows.h>
+#include <mmsystem.h>
+#include <mmddk.h>		// This is needed to compile the command table.
+#ifdef WIN32
+#include <winver.h>
+#else
+#include <ver.h>
+#endif
+
+#ifdef RC_INVOKED
+#ifdef WIN32
+#define MMVERSIONNAME          "mcispc32.dll\0"
+#define MMLANG				   "040904B0"
+#else
+#define MMVERSIONNAME          "mcispc.drv\0"
+#define MMLANG				   "040904E4"
+#endif
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION    01, 00, 0, 000
+PRODUCTVERSION 01, 00, 0, 000
+FILEFLAGSMASK  0x0000003FL
+FILEFLAGS      0
+FILEOS         VOS_DOS_WINDOWS16
+FILETYPE       VFT_DRV
+FILESUBTYPE    VFT2_DRV_INSTALLABLE
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK MMLANG
+        BEGIN
+            VALUE "CompanyName", "Trisoft\0"
+            VALUE "FileDescription", "MCI SPC700 Emulator\0"
+            VALUE "FileVersion",  "Version 1.00\0"
+            VALUE "InternalName", MMVERSIONNAME
+            VALUE "LegalCopyright", "Copyright \251 Trisoft 1999\0"
+            VALUE "OriginalFilename", MMVERSIONNAME
+            VALUE "ProductName", "MCI SPC700 Emulator\0"
+            VALUE "ProductVersion", "Version 1.00\0"
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        /* the following line should be extended for localized versions */
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif

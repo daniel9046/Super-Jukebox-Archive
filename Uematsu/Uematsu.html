@@ -1,0 +1,649 @@
+<html>
+<head>
+<title>Documentation for Uematsu.DLL</title>
+</head>
+
+<body>
+
+<div align="center"><h1>Uematsu.DLL Documentation</h1>
+<h4>Written by <a href="mailto:marius.fodor@usa.net">Marius Fodor</a>.<br>
+DLL created by <a href="mailto:marius.fodor@usa.net">Marius Fodor</a>.<br>
+SPC700/DSP core by <a href="mailto:antires@aol.com">Anti Resonance</a>.</h4></div>
+
+<p>
+This is a simple HTML for the functions exported by Uematsu.DLL, click on one of the links below to jump directly to the text for that function. I would have used frames to do this, but only if I <i>knew</i> how to do frames. :-(</p>
+
+<a href="#Uematsu_SetWindowHandle">Uematsu_SetWindowHandle</a><br>
+<a href="#Uematsu_GetConfiguration">Uematsu_GetConfiguration</a><br>
+<a href="#Uematsu_SetConfiguration">Uematsu_SetConfiguration</a><br>
+<a href="#Uematsu_Play">Uematsu_Play</a><br>
+<a href="#Uematsu_Stop">Uematsu_Stop</a><br>
+<a href="#Uematsu_Pause">Uematsu_Pause</a><br>
+<a href="#Uematsu_UnPause">Uematsu_UnPause</a><br>
+<a href="#Uematsu_SetWAVOutputFileName">Uematsu_SetWAVOutputFileName</a><br>
+<a href="#Uematsu_GetPlayTime">Uematsu_GetPlayTime</a><br>
+<a href="#Uematsu_SetPlayTime">Uematsu_SetPlayTime</a><br>
+<a href="#Uematsu_SetSongLength">Uematsu_SetSongLength</a><br>
+<a href="#Uematsu_SetSongSpeed">Uematsu_SetSongSpeed</a><br>
+<a href="#Uematsu_SetSongPitch">Uematsu_SetSongPitch</a><br>
+<a href="#Uematsu_SetMainSS">Uematsu_SetMainSS</a><br>
+<a href="#Uematsu_SetEchoSS">Uematsu_SetEchoSS</a><br>
+<a href="#Uematsu_SetPreAmp">Uematsu_SetPreAmp</a><br>
+<a href="#Uematsu_SetMixingThreadPriority">Uematsu_SetMixingThreadPriority</a><br>
+<a href="#Uematsu_IsActive">Uematsu_IsActive</a><br>
+<a href="#Uematsu_IsPlaying">Uematsu_IsPlaying</a><br>
+<a href="#Uematsu_HasFailed">Uematsu_HasFailed</a><br>
+<a href="#Uematsu_MuteChannels">Uematsu_MuteChannels</a><br>
+<a href="#Uematsu_GetVisParams">Uematsu_GetVisParams</a><br>
+<a href="#Uematsu_LoadID666Tag">Uematsu_LoadID666Tag</a><br>
+<a href="#Uematsu_SaveID666Tag">Uematsu_SaveID666Tag</a><br>
+<a href="#Uematsu_GetCoreInfo">Uematsu_GetCoreInfo</a><br>
+<a href="#Uematsu_GetCurrentPreamp">Uematsu_GetCurrentPreamp</a><br>
+
+<hr>
+
+<h1><a name="Uematsu_SetWindowHandle">Uematsu_SetWindowHandle</a></h1>
+<p>
+The <b>Uematsu_SetWindowHandle</b> function takes the handle of a window that will be used as the owner of popup dialog boxes.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SetWindowHandle(
+  HWND</b><i> hWndOwner</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>hWndOwner</i></dt>
+<dd>
+Specifies the handle of a window to be the owner of popup dialog boxes.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_GetConfiguration">Uematsu_GetConfiguration</a></h1>
+<p>
+The <b>Uematsu_GetConfiguration</b> function retrieves the current configuration for the engine.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_GetConfiguration(
+  LPUEMATSUCONFIG</b><i> lpuc</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>lpuc</i></dt>
+<dd>
+Pointer to an <b>UEMATSUCONFIG</b> structure to receive the current configuration.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_SetConfiguration">Uematsu_SetConfiguration</a></h1>
+<p>
+The <b>Uematsu_SetConfiguration</b> function sets the current configuration for the engine.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SetConfiguration(
+  LPUEMATSUCONFIG</b><i> lpuc</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>lpuc</i></dt>
+<dd>
+Pointer to an <b>UEMATSUCONFIG</b> structure that contains the configuration to set.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_Play">Uematsu_Play</a></h1>
+<p>
+The <b>Uematsu_Play</b> function loads an SPC file and starts playing it.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_Play(
+  LPCTSTR</b><i> lpszFileName</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>lpszFileName</i></dt>
+<dd>
+Pointer to a null-terminated string that contains the name of the SPC file to load and play.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_Stop">Uematsu_Stop</a></h1>
+<p>
+The <b>Uematsu_Stop</b> function stops any currently playing song.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_Stop();</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<hr>
+
+<h1><a name="Uematsu_Pause">Uematsu_Pause</a></h1>
+<p>
+The <b>Uematsu_Pause</b> function pauses a currently playing song.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_Pause();</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<hr>
+
+<h1><a name="Uematsu_UnPause">Uematsu_UnPause</a></h1>
+<p>
+The <b>Uematsu_UnPause</b> function resumes a previously paused song.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_UnPause();</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<hr>
+
+<h1><a name="Uematsu_SetWAVOutputFileName">Uematsu_SetWAVOutputFileName</a></h1>
+<p>
+The <b>Uematsu_SetWAVOutputFileName</b> function specifies the file name to use for dumping to WAV, and whether to output with or without sound.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SetWAVOutputFileName(
+  LPCTSTR</b><i> lpszFileName</i>
+  <b>BOOL</b><i> bWithSound</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>lpszFileName</i></dt>
+<dd>
+Pointer to a null-terminated string that contains the file name for the WAV output. Specify a NULL pointer to turn off WAV dumping.</dd>
+<dt>
+<i>bWithSound</i></dt>
+<dd>
+Flag indicating whether to dump to the WAV file with (TRUE) or without (FALSE) sound.
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_GetPlayTime">Uematsu_GetPlayTime</a></h1>
+<p>
+The <b>Uematsu_GetPlayTime</b> function returns the current playing time.</p>
+
+<pre><code><b>UINT WINAPI Uematsu_GetPlayTime();</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+A UINT value representing the current playing time in milliseconds.</p>
+
+<hr>
+
+<h1><a name="Uematsu_SetPlayTime">Uematsu_SetPlayTime</a></h1>
+<p>
+The <b>Uematsu_SetPlayTime</b> function seeks to the playing time specified.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SetPlayTime(
+  UINT</b><i> uTime</i>
+  <b>BOOL</b><i> bFastSeek</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>uTime</i></dt>
+<dd>
+Specifies the time to seek to in milliseconds.</dd>
+<dt>
+<i>bFastSeek</i></dt>
+<dd>
+Specifies whether to use fast (TRUE) or slow (FALSE) seeking. The only problem with the fast seeking is that it can break some songs.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_SetSongLength">Uematsu_SetSongLength</a></h1>
+<p>
+The <b>Uematsu_SetSongLength</b> function specifies the current length and fade length to use when playing a song.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SetSongLength(
+  UINT</b><i> uSong</i>
+  <b>UINT</b><i> uFade</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>uSong</i></dt>
+<dd>
+Specifies the length for the song in milliseconds.</dd>
+<dt>
+<i>uFade</i></dt>
+<dd>
+Specifies the fading length for the song in milliseconds.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_SetSongSpeed">Uematsu_SetSongSpeed</a></h1>
+<p>
+The <b>Uematsu_SetSongSpeed</b> function sets the current speed or tempo to use when playing a song.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SetSongSpeed(
+  UINT</b><i> uSpeed</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>uSpeed</i></dt>
+<dd>
+Specifies the speed, the normal value is 65536.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_SetSongPitch">Uematsu_SetSongPitch</a></h1>
+<p>
+The <b>Uematsu_SetSongPitch</b> function sets the current base pitch to use when playing a song.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SetSongPitch(
+  UINT</b><i> uPitch</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>uPitch</i></dt>
+<dd>
+Specifies the base pitch, the normal value is 32000.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_SetMainSS">Uematsu_SetMainSS</a></h1>
+<p>
+The <b>Uematsu_SetMainSS</b> function sets the current main stereo separation.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SetMainSS(
+  UINT</b><i> uSeparation</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>uSeparation</i></dt>
+<dd>
+Specifies the current separation, the normal value is 32768.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_SetEchoSS">Uematsu_SetEchoSS</a></h1>
+<p>
+The <b>Uematsu_SetEchoSS</b> function sets the current echo stereo separation or feedback crosstalk.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SetEchoSS(
+  INT</b><i> nSeparation</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>nSeparation</i></dt>
+<dd>
+Specifies the current separation, the normal value is 32768.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_SetPreAmp">Uematsu_SetPreAmp</a></h1>
+<p>
+The <b>Uematsu_SetPreAmp</b> function sets the current preamplification level.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SetPreAmp(
+  UINT</b><i> uPreAmp</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>uPreAmp</i></dt>
+<dd>
+Specifies the preamplification level, the valid range is from 0 to 256, but 35-50 is usually ideal.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_SetMixingThreadPriority">Uematsu_SetMixingThreadPriority</a></h1>
+<p>
+The <b>Uematsu_SetMixingThreadPriority</b> function sets the current priority level for the sound mixing thread.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SetMixingThreadPriority(
+  INT</b><i> nPriority</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>nPriority</i></dt>
+<dd>
+Specifies the priority level for the mixing thread. This parameter can be one of the following values:
+<table cellspacing=4 cols=2>
+<tr valign=top>
+<th align=left width=56%>Priority</th>
+<th align=left width=44%>Meaning</th>
+</tr>
+<tr valign=top>
+<td width=56%>THREAD_PRIORITY_ABOVE_NORMAL</td>
+<td width=44%>Indicates 1 point above normal priority for the priority class.</td>
+</tr>
+<tr valign=top>
+<td width=56%>THREAD_PRIORITY_BELOW_NORMAL</td>
+<td width=44%>Indicates 1 point below normal priority for the priority class.</td>
+</tr>
+<tr valign=top>
+<td width=56%>THREAD_PRIORITY_HIGHEST</td>
+<td width=44%>Indicates 2 points above normal priority for the priority class.</td>
+</tr>
+<tr valign=top>
+<td width=56%>THREAD_PRIORITY_IDLE</td>
+<td width=44%>Indicates a base priority level of 1 for IDLE_PRIORITY_CLASS, NORMAL_PRIORITY_CLASS, or HIGH_PRIORITY_CLASS processes, and a base priority level of 16 for REALTIME_PRIORITY_CLASS processes.</td>
+</tr>
+<tr valign=top>
+<td width=56%>THREAD_PRIORITY_LOWEST</td>
+<td width=44%>Indicates 2 points below normal priority for the priority class.</td>
+</tr>
+<tr valign=top>
+<td width=56%>THREAD_PRIORITY_NORMAL</td>
+<td width=44%>Indicates normal priority for the priority class.</td>
+</tr>
+<tr valign=top>
+<td width=56%>THREAD_PRIORITY_TIME_CRITICAL</td>
+<td width=44%>Indicates a base priority level of 15 for IDLE_PRIORITY_CLASS, NORMAL_PRIORITY_CLASS, or HIGH_PRIORITY_CLASS processes, and a base priority level of 31 for REALTIME_PRIORITY_CLASS processes.</td>
+</tr>
+</table><br></dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_IsActive">Uematsu_IsActive</a></h1>
+<p>
+The <b>Uematsu_IsActive</b> function indicates whether the engine is currently active.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_IsActive();</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if the engine is active; otherwise, 0.</p>
+
+<hr>
+
+<h1><a name="Uematsu_IsPlaying">Uematsu_IsPlaying</a></h1>
+<p>
+The <b>Uematsu_IsPlaying</b> function indicates whether a song is currently playing.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_IsPlaying();</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if a song is playing; otherwise, 0.</p>
+
+<hr>
+
+<h1><a name="Uematsu_HasFailed">Uematsu_HasFailed</a></h1>
+<p>
+The <b>Uematsu_HasFailed</b> function indicates whether the mixing thread has failed to do something while playing.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_HasFailed();</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if the mixing thread has failed; otherwise, 0.</p>
+
+<hr>
+
+<h1><a name="Uematsu_MuteChannels">Uematsu_MuteChannels</a></h1>
+<p>
+The <b>Uematsu_MuteChannels</b> function mutes or unmutes the 8 DSP channels.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_MuteChannels(
+  INT</b><i> nChannels</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>nChannels</i></dt>
+<dd>
+Bitmask indicating which channel to mute or unmute. Bit 0 represents channel 0, bit 1 represents channel 1, etc. A value of 1 means mute and a value of 0 means unmute.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_GetVisParams">Uematsu_GetVisParams</a></h1>
+<p>
+The <b>Uematsu_GetVisParams</b> function retrieves the current visualization related parameters of the engine.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_GetVisParams(
+  LPUEMATSUVISPARAMS</b><i> lpuvp</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>lpuvp</i></dt>
+<dd>
+Pointer to an <b>UEMATSUVISPARAMS</b> structure to receive the current visualization related parameters.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_LoadID666Tag">Uematsu_LoadID666Tag</a></h1>
+<p>
+The <b>Uematsu_LoadID666Tag</b> function reads the ID666 tag of an SPC file.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_LoadID666Tag(
+  LPCTSTR</b><i> lpszFileName</i>
+  <b>LPID666TAG</b><i> lpTag</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>lpszFileName</i></dt>
+<dd>
+Pointer to a null-terminated string that contains the file name of the SPC file.</dd>
+<dt>
+<i>lpTag</i></dt>
+<dd>
+Pointer to an <b>ID666TAG</b> structure to receive the ID666 tag fields.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_SaveID666Tag">Uematsu_SaveID666Tag</a></h1>
+<p>
+The <b>Uematsu_SaveID666Tag</b> function saves an ID666 tag to an SPC file.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_SaveID666Tag(
+  LPCTSTR</b><i> lpszFileName</i>
+  <b>LPID666TAG</b><i> lpTag</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>lpszFileName</i></dt>
+<dd>
+Pointer to a null-terminated string that contains the file name of an SPC file.</dd>
+<dt>
+<i>lpTag</i></dt>
+<dd>
+Pointer to an <b>ID666TAG</b> structure that specifies the ID666 fileds to write to the SPC file.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_GetCoreInfo">Uematsu_GetCoreInfo</a></h1>
+<p>
+The <b>Uematsu_GetCoreInfo</b> function retrieves the version, minimum supported version and miscellaneous options for the core SNESAPU.DLL engine.</p>
+
+<pre><code><b>BOOL WINAPI Uematsu_GetCoreInfo(
+  LPUINT</b><i> lpuVersion</i>
+  <b>LPUINT</b><i> lpuMinVersion</i>
+  <b>LPUINT</b><i> lpuOptions</i>
+<b>);</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+Nonzero if successful; otherwise, 0.</p>
+
+<h4>Parameters</h4>
+
+<dl>
+<dt>
+<i>lpuVersion</i></dt>
+<dd>
+Pointer to a UINT variable that is to receive the version number of the core engine.</dd>
+<dt>
+<i>lpuMinVersion</i></dt>
+<dd>
+Pointer to a UINT variable that is to receive the minimum version that the core engine is backwards compatible with.</dd>
+<dt>
+<i>lpuOptions</i></dt>
+<dd>
+Pointer to a UINT variable that is to receive various compiler related options for the core engine.</dd>
+</dl>
+
+<hr>
+
+<h1><a name="Uematsu_GetCurrentPreamp">Uematsu_GetCurrentPreamp</a></h1>
+<p>
+The <b>Uematsu_GetCurrentPreamp</b> function returns the current preamplification level, which can change dynamically depending on the APR setting.</p>
+
+<pre><code><b>UINT WINAPI Uematsu_GetCurrentPreamp();</b>
+</code></pre>
+
+<h4>Return Value</h4>
+<p>
+A UINT value representing the current preamplification level.</p>
+
+</body>
+</html>

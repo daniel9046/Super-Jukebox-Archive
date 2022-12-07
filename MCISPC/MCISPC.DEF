@@ -1,0 +1,25 @@
+LIBRARY   MCISPC
+DESCRIPTION "spc:[MCI] SPC700 Emulator"
+EXETYPE   WINDOWS
+CODE      PRELOAD MOVEABLE DISCARDABLE
+DATA      PRELOAD MOVEABLE SINGLE
+HEAPSIZE  1024
+
+IMPORTS
+C16ThkSL01=KERNEL.631
+ThunkConnect16=KERNEL.651
+
+EXPORTS
+          WEP PRIVATE
+; To implement your own Windows Exit Procedure add the following
+; function to your application (referring to it in the .def file is
+; not required.)  The extern "C" is only required if module is C++.
+; extern "C" int FAR PASCAL _WEP(int)
+; {
+;       /* Your WEP functionality goes here */
+;  return 1;
+; }
+thk0_ThunkData16
+LibMain
+DllEntryPoint
+DriverProc

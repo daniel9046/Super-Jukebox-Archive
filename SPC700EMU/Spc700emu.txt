@@ -1,0 +1,90 @@
+DWORD WINAPI InitSPC(dwFlags, dwChannels, dwBitsPerSample, dwSamplesPerSecond, dwVM)
+
+DWORD dwFlags            /* operation flags              */
+DWORD dwChannels         /* number of sound channels     */
+DWORD dwBitsPerSample    /* number of bits per sample    */
+DWORD dwSamplesPerSecond /* number of samples per second */
+DWORD dwVM               /* volume multiplier            */
+
+The InitSPC function initializes the SPC700 engine.
+
+Parameter          Description
+------------------------------------------------------------------------
+dwFlags            Specifies the operation to perform. This parameter can be a combination of
+                   the following values:
+
+		   Value        Meaning
+		   -----------------------------------------------------
+		   SPC_APU      Initialize only the APU data buffers.
+		   SPC_SND      Initialize only the sound output driver.
+
+dwChannels         Specifies the number of sound channels. 1 specifies mono, and 2 specifies
+                   stereo.
+
+dwBitsPerSample    Specifies the number of bits per sample. Either 8 or 16.
+
+dwSamplesPerSecond Specifies the number of samples per second in Hertz.
+
+dwVM               Specifies the volume multiplier. Either 1, 2, 4, or 8, anything else
+                   defaults to 1.
+
+Returns
+The return value is MMSYSERR_NOERROR if the function is successful. If it returns an error
+you can use the waveOutGetErrorText function to obtain a descriptive message of the error.
+
+########################################################################################
+
+void WINAPI DeinitSPC(dwFlags)
+
+DWORD dwFlags /* operation flags */
+
+The DeinitSPC function de-initializes the SPC700 engine.
+
+Parameter          Description
+--------------------------------------------------------------
+dwFlags            Specifies the operation to perform. This parameter can be a combination of
+                   the following values:
+
+		   Value        Meaning
+		   -----------------------------------------------------
+		   SPC_APU      De-initialize only the APU data buffers.
+		   SPC_SND      De-initialize only the sound output driver.
+
+#########################################################################################
+
+DWORD WINAPI LoadSPC(lpszFileName)
+
+LPCSTR lpszFileName /* address of name of file */
+
+The LoadSPC function loads an SPC file into the SPC700 engine.
+
+Parameter          Description
+-----------------------------------------------------------------
+lpszFileName       Points to a null-terminated string containing the name of the file to load.
+
+Returns
+The return value is zero if the function is successful. Otherwise, it is nonzero.
+
+#########################################################################################
+
+void WINAPI RestoreSPC()
+
+The RestoreSPC function restores the contents of the SPC700 engine with the loaded file.
+
+#########################################################################################
+
+void WINAPI PlaySPC()
+
+The PlaySPC function starts playing the currently loaded SPC file.
+
+#########################################################################################
+
+void WINAPI PauseSPC()
+
+The PauseSPC function pauses the currently playing SPC file.
+
+#########################################################################################
+
+void WINAPI StopSPC()
+
+The StopSPC function stops the currently playing SPC file.

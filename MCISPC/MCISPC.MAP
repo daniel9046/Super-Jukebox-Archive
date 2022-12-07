@@ -1,0 +1,565 @@
+
+ MCISPC
+
+ Start     Length     Name                   Class
+ 0001:0000 000B5H     THK0_TEXT              CODE 16-bit
+           at offset 00000H 000B5H bytes from C:\MYPROJ~1\MCISPC\THK0-16.OBJ (thk0.asm)
+
+ 0001:00B6 00000H     MCISPC_TEXT            CODE 16-bit
+ 0001:00B6 011F6H     _TEXT                  CODE 16-bit
+           at offset 00000H 000FEH bytes from c:\msvc\lib\ldllcew.lib (windows\crt0.asm)
+           at offset 000FEH 0006EH bytes from c:\msvc\lib\ldllcew.lib (sprintf.c)
+           at offset 0016CH 0003CH bytes from c:\msvc\lib\ldllcew.lib (strcpy.asm)
+           at offset 001A8H 00019H bytes from c:\msvc\lib\ldllcew.lib (strlen.asm)
+           at offset 001C2H 0005EH bytes from c:\msvc\lib\ldllcew.lib (hmemcpy.asm)
+           at offset 00220H 00032H bytes from c:\msvc\lib\ldllcew.lib (lmul.asm)
+           at offset 00252H 0002CH bytes from c:\msvc\lib\ldllcew.lib (windows\stubmain.asm)
+           at offset 0027EH 000E3H bytes from c:\msvc\lib\ldllcew.lib (dos\crt0dat.asm)
+           at offset 00362H 00023H bytes from c:\msvc\lib\ldllcew.lib (dos\crt0msg.asm)
+           at offset 00386H 00097H bytes from c:\msvc\lib\ldllcew.lib (dos\stdenvp.asm)
+           at offset 0041EH 00506H bytes from c:\msvc\lib\ldllcew.lib (output.asm)
+           at offset 00924H 000E2H bytes from c:\msvc\lib\ldllcew.lib (_flsbuf.asm)
+           at offset 00A06H 0004EH bytes from c:\msvc\lib\ldllcew.lib (dos\nmsghdr.asm)
+           at offset 00A54H 0005AH bytes from c:\msvc\lib\ldllcew.lib (windows\wchkstk.asm)
+           at offset 00AAEH 000C8H bytes from c:\msvc\lib\ldllcew.lib (dos\lseek.asm)
+           at offset 00B76H 0018BH bytes from c:\msvc\lib\ldllcew.lib (write.asm)
+           at offset 00D02H 00006H bytes from c:\msvc\lib\ldllcew.lib (crt0fp.asm)
+           at offset 00D08H 0002DH bytes from c:\msvc\lib\ldllcew.lib (dos\stdalloc.asm)
+           at offset 00D36H 00010H bytes from c:\msvc\lib\ldllcew.lib (windows\windgrp.asm)
+           at offset 00D46H 00001H bytes from c:\msvc\lib\ldllcew.lib (nearstub.asm)
+           at offset 00D48H 0004BH bytes from c:\msvc\lib\ldllcew.lib (_getbuf.asm)
+           at offset 00D94H 0004CH bytes from c:\msvc\lib\ldllcew.lib (windows\fatal.asm)
+           at offset 00DE0H 00117H bytes from c:\msvc\lib\ldllcew.lib (growseg.asm)
+           at offset 00EF8H 0005DH bytes from c:\msvc\lib\ldllcew.lib (dos\dosret.asm)
+           at offset 00F56H 00014H bytes from c:\msvc\lib\ldllcew.lib (windows\windgrpx.c)
+           at offset 00F6AH 00014H bytes from c:\msvc\lib\ldllcew.lib (stackava.asm)
+           at offset 00F7EH 000C8H bytes from c:\msvc\lib\ldllcew.lib (fmalloc.asm)
+           at offset 01046H 00081H bytes from c:\msvc\lib\ldllcew.lib (newseg.asm)
+           at offset 010C8H 0000DH bytes from c:\msvc\lib\ldllcew.lib (fdata.asm)
+           at offset 010D6H 0007CH bytes from c:\msvc\lib\ldllcew.lib (searchsg.asm)
+           at offset 01152H 0002AH bytes from c:\msvc\lib\ldllcew.lib (freelist.asm)
+           at offset 0117CH 00034H bytes from c:\msvc\lib\ldllcew.lib (initseg.asm)
+           at offset 011B0H 00036H bytes from c:\msvc\lib\ldllcew.lib (linkseg.asm)
+
+ 0001:12AC 00054H     WEP_TEXT               CODE 16-bit
+           at offset 00000H 0003CH bytes from c:\msvc\lib\ldllcew.lib (windows\wep.asm)
+           at offset 0003CH 00018H bytes from c:\msvc\lib\ldllcew.lib (windows\stubwep.asm)
+
+ 0001:1300 00A74H     COMDAT_SEG1            CODE 16-bit
+           at offset 00000H 0000DH bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 0000EH 0002CH bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 0003AH 0002CH bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 00066H 006E3H bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 0074AH 00237H bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 00982H 00010H bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 00992H 0000EH bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 009A0H 0000BH bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 009ACH 00048H bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 009F4H 00046H bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 00A3AH 00012H bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 00A4CH 00028H bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+
+ 0002:0000 00010H     NULL                   BEGDATA 16-bit
+           at offset 00000H 00010H bytes from c:\msvc\lib\ldllcew.lib (windows\crt0.asm)
+
+ 0002:0010 001D8H     _DATA                  DATA 16-bit
+           at offset 00000H 000BCH bytes from C:\MYPROJ~1\MCISPC\THK0-16.OBJ (thk0.asm)
+           at offset 000BCH 00008H bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 000C4H 00015H bytes from c:\msvc\lib\ldllcew.lib (windows\crt0.asm)
+           at offset 000DAH 00044H bytes from c:\msvc\lib\ldllcew.lib (dos\crt0dat.asm)
+           at offset 0011EH 00004H bytes from c:\msvc\lib\ldllcew.lib (dos\crt0msg.asm)
+           at offset 00122H 00061H bytes from c:\msvc\lib\ldllcew.lib (output.asm)
+           at offset 00184H 00004H bytes from c:\msvc\lib\ldllcew.lib (windows\wchkstk.asm)
+           at offset 00188H 00002H bytes from c:\msvc\lib\ldllcew.lib (file.asm)
+           at offset 0018AH 00022H bytes from c:\msvc\lib\ldllcew.lib (cmiscdat.asm)
+           at offset 001ACH 00002H bytes from c:\msvc\lib\ldllcew.lib (growseg.asm)
+           at offset 001AEH 00002H bytes from c:\msvc\lib\ldllcew.lib (_cflush.asm)
+           at offset 001B0H 00014H bytes from c:\msvc\lib\ldllcew.lib (dos\dosret.asm)
+           at offset 001C4H 00002H bytes from c:\msvc\lib\ldllcew.lib (seekfast.asm)
+           at offset 001C6H 00004H bytes from c:\msvc\lib\ldllcew.lib (fmalloc.asm)
+           at offset 001CAH 0000EH bytes from c:\msvc\lib\ldllcew.lib (fdata.asm)
+
+ 0002:01E8 0000EH     CDATA                  DATA 16-bit
+           at offset 00000H 0000EH bytes from c:\msvc\lib\ldllcew.lib (dos\crt0dat.asm)
+
+ 0002:01F6 00000H     XIFB                   DATA 16-bit
+ 0002:01F6 00000H     XIF                    DATA 16-bit
+ 0002:01F6 00000H     XIFE                   DATA 16-bit
+ 0002:01F6 00000H     XIB                    DATA 16-bit
+ 0002:01F6 00000H     XI                     DATA 16-bit
+ 0002:01F6 00000H     XIE                    DATA 16-bit
+ 0002:01F6 00000H     XPB                    DATA 16-bit
+ 0002:01F6 00000H     XP                     DATA 16-bit
+ 0002:01F6 00000H     XPE                    DATA 16-bit
+ 0002:01F6 00000H     XCB                    DATA 16-bit
+ 0002:01F6 00000H     XC                     DATA 16-bit
+ 0002:01F6 00000H     XCE                    DATA 16-bit
+ 0002:01F6 00000H     XCFB                   DATA 16-bit
+ 0002:01F6 00000H     XCFCRT                 DATA 16-bit
+ 0002:01F6 00000H     XCF                    DATA 16-bit
+ 0002:01F6 00000H     XCFE                   DATA 16-bit
+ 0002:01F6 00000H     XIFCB                  DATA 16-bit
+ 0002:01F6 00000H     XIFU                   DATA 16-bit
+ 0002:01F6 00000H     XIFL                   DATA 16-bit
+ 0002:01F6 00000H     XIFM                   DATA 16-bit
+ 0002:01F6 00000H     XIFCE                  DATA 16-bit
+ 0002:01F6 00000H     DBDATA                 DATA 16-bit
+ 0002:01F6 000E4H     IOB                    DATA 16-bit
+           at offset 00000H 000E4H bytes from c:\msvc\lib\ldllcew.lib (file.asm)
+
+ 0002:02DA 00000H     IOBX                   DATA 16-bit
+ 0002:02DA 0000CH     IOBE                   DATA 16-bit
+           at offset 00000H 0000CH bytes from c:\msvc\lib\ldllcew.lib (file.asm)
+
+ 0002:02E6 000E4H     IOB2                   DATA 16-bit
+           at offset 00000H 000E4H bytes from c:\msvc\lib\ldllcew.lib (file.asm)
+
+ 0002:03CA 00000H     IOB2X                  DATA 16-bit
+ 0002:03CA 0000CH     IOB2E                  DATA 16-bit
+           at offset 00000H 0000CH bytes from c:\msvc\lib\ldllcew.lib (file.asm)
+
+ 0002:03D6 00000H     CONST                  CONST 16-bit
+ 0002:03D6 00008H     HDR                    MSG 16-bit
+           at offset 00000H 00008H bytes from c:\msvc\lib\ldllcew.lib (dos\nmsghdr.asm)
+
+ 0002:03DE 000D4H     MSG                    MSG 16-bit
+           at offset 00000H 000A5H bytes from c:\msvc\lib\ldllcew.lib (dos\crt0msg.asm)
+           at offset 000A5H 0002FH bytes from c:\msvc\lib\ldllcew.lib (crt0fp.asm)
+
+ 0002:04B2 00002H     PAD                    MSG 16-bit
+           at offset 00000H 00002H bytes from c:\msvc\lib\ldllcew.lib (dos\crt0msg.asm)
+           at offset 00000H 00002H bytes from c:\msvc\lib\ldllcew.lib (dos\nmsghdr.asm)
+           at offset 00000H 00002H bytes from c:\msvc\lib\ldllcew.lib (crt0fp.asm)
+
+ 0002:04B4 00001H     EPAD                   MSG 16-bit
+           at offset 00000H 00001H bytes from c:\msvc\lib\ldllcew.lib (dos\nmsghdr.asm)
+
+ 0002:04B6 00018H     _BSS                   BSS 16-bit
+           at offset 00000H 0000CH bytes from MCISPC.OBJ (c:\myproj~1\mcispc\mcispc.c)
+           at offset 0000CH 0000CH bytes from c:\msvc\lib\ldllcew.lib (sprintf.c)
+
+ 0002:04CE 00000H     XOB                    BSS 16-bit
+ 0002:04CE 00000H     XO                     BSS 16-bit
+ 0002:04CE 00000H     XOE                    BSS 16-bit
+ 0002:04CE 00000H     XOFB                   BSS 16-bit
+ 0002:04CE 00000H     XOF                    BSS 16-bit
+ 0002:04CE 00000H     XOFE                   BSS 16-bit
+ 0002:04D0 00530H     c_common               BSS 16-bit
+
+ Origin   Group
+ 0002:0   DGROUP
+
+ Address   Export                  Alias
+
+ 0001:130E DllEntryPoint           DllEntryPoint
+ 0001:1A4A DriverProc              DriverProc
+ 0001:1300 LibMain                 LibMain
+ 0002:0010 thk0_ThunkData16        thk0_ThunkData16
+ 0001:12AC WEP                     WEP
+ 0001:101C ___ExportedStub         ___ExportedStub
+
+  Address         Publics by Name
+
+ 0001:1C82       ??_C@_0BA@ECMP@SPC700?5Emulator?$AA@
+                    ??_C@_0BA@ECMP@SPC700?5Emulator?$AA@
+
+ 0001:1D3A       ??_C@_0BC@HOFC@?$CFs?5was?5not?5found?4?$AA@
+                    ??_C@_0BC@HOFC@?$CFs?5was?5not?5found?4?$AA@
+
+ 0001:1D4C       ??_C@_0CI@NFLP@Failed?5to?5display?5configuration?5@
+                    ??_C@_0CI@NFLP@Failed?5to?5display?5configuration?5@
+
+ 0001:1CF4       ??_C@_0EG@LDEE@IN_SPC?4DLL?5was?5not?5found?4?5This?5f@
+                    ??_C@_0EG@LDEE@IN_SPC?4DLL?5was?5not?5found?4?5This?5f@
+
+ 0001:1CAC       ??_C@_0EI@MGPF@OUT_WAVE?4DLL?5was?5not?5found?4?5This@
+                    ??_C@_0EI@MGPF@OUT_WAVE?4DLL?5was?5not?5found?4?5This@
+
+ 0001:1CA0       ??_C@_0L@IAIO@MCISPC?4DRV?$AA@
+                    ??_C@_0L@IAIO@MCISPC?4DRV?$AA@
+
+ 0001:1C92       ??_C@_0O@IFFE@MCISPCDLG?4DLL?$AA@
+                    ??_C@_0O@IFFE@MCISPCDLG?4DLL?$AA@
+
+ 0000:0000  Imp  C16ThkSL01           (KERNEL.631)
+ 0000:0000  Imp  DEFDRIVERPROC        (USER.255)
+ 0001:004F       DEINITSPC
+ 0001:0068       DEINITZSPC
+ 0001:007C       DISPLAYCONFIGDLG
+ 0001:130E       DllEntryPoint
+ 0000:0000  Imp  DOS3CALL             (KERNEL.102)
+ 0001:1A4A       DriverProc
+ 0000:0000  Imp  FATALAPPEXIT         (KERNEL.137)
+ 0000:0000  Imp  FATALEXIT            (KERNEL.1)
+ 0001:0027       GETCURRENTPROCESS
+ 0000:0000  Imp  GETDOSENVIRONMENT    (KERNEL.131)
+ 0000:0000  Imp  GETMODULEUSAGE       (KERNEL.48)
+ 0001:002C       GETPRIORITYCLASS
+ 0000:0000  Imp  GETTICKCOUNT         (USER.13)
+ 0000:0000  Imp  GETVERSION           (KERNEL.3)
+ 0000:0000  Imp  GLOBALALLOC          (KERNEL.15)
+ 0000:0000  Imp  GLOBALFREE           (KERNEL.17)
+ 0000:0000  Imp  GLOBALLOCK           (KERNEL.18)
+ 0000:0000  Imp  GLOBALREALLOC        (KERNEL.16)
+ 0000:0000  Imp  GLOBALSIZE           (KERNEL.20)
+ 0000:0000  Imp  GLOBALUNLOCK         (KERNEL.19)
+ 0001:0054       INITSPC
+ 0000:0000  Imp  INITTASK             (KERNEL.91)
+ 0001:006D       INITZSPC
+ 0001:1300       LibMain
+ 0001:0045       LOADSPC
+ 0000:0000  Imp  LOCALINIT            (KERNEL.4)
+ 0000:0000  Imp  LOCKSEGMENT          (KERNEL.23)
+ 0000:0000  Imp  MCIDRIVERNOTIFY      (MMSYSTEM.711)
+ 0001:1366       MCIDRIVERPROC
+ 0001:133A       MCINOTIFYRETURN
+ 0000:0000  Imp  MESSAGEBEEP          (USER.104)
+ 0000:0000  Imp  MESSAGEBOX           (USER.1)
+ 0000:0008  Abs  pAtomTable
+ 0001:003B       PAUSESPC
+ 0001:005E       PAUSEZSPC
+ 0001:0040       PLAYSPC
+ 0001:0063       PLAYZSPC
+ 0000:0006  Abs  pLocalHeap
+ 0000:000E  Abs  pStackBot
+ 0000:000C  Abs  pStackMin
+ 0000:000A  Abs  pStackTop
+ 0001:0077       READREGISTRYSETTINGS
+ 0001:004A       RESTORESPC
+ 0002:0004       rsrvptrs
+ 0001:0031       SETPRIORITYCLASS
+ 0001:0036       STOPSPC
+ 0001:0059       STOPZSPC
+ 0001:0000       THK0_THUNKCONNECT16
+ 0002:0010       thk0_ThunkData16
+ 0002:003C       THK0_THUNKDATA16APIDATABASE
+ 0000:0000  Imp  ThunkConnect16       (KERNEL.651)
+ 0000:0000  Imp  WAVEOUTGETERRORTEXT  (MMSYSTEM.403)
+ 0001:12AC       WEP
+ 0001:0072       WRITEREGISTRYSETTINGS
+ 0002:00E3       _aseghi
+ 0002:00E1       _aseglo
+ 0002:05D8       _bDisplayMessage
+ 0002:09FE       _bFileLoaded
+ 0002:09FA       _bPaused
+ 0002:09FC       _bPlaying
+ 0002:05D4       _dwOldPriorityClass
+ 0002:04B6       _edata
+ 0002:0A00       _end
+ 0002:00F8       _errno
+ 0002:00D0       _Generic
+ 0002:05DA       _mciConfigParms
+ 0001:0288       _memcpy
+ 0001:01C4       _sprintf
+ 0002:00D4       _STKHQQ
+ 0001:0232       _strcpy
+ 0001:026E       _strlen
+ 0002:05FA       _szBuffer
+ 0002:04D0       _szElementName
+ 0002:00CC       _szProduct
+ 0002:0194       __aaltstkovr
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 0000:D6D6  Abs  __aDBdoswp
+ 0002:012E       __adbgmsg
+ 0000:D6D6  Abs  __aDBused
+ 0001:0B3A       __aFchkstk
+ 0001:02E6       __aFlmul
+ 0001:02E6       __aFulmul
+ 0000:0000  Imp  __AHINCR             (KERNEL.114)
+ 0002:00EA       __aintdiv
+ 0002:01BC       __amblksiz
+ 0001:0E64       __amsg_exit
+ 0001:0B1A       __aNchkstk
+ 0002:01BA       __asizeC
+ 0002:01BB       __asizeD
+ 0001:010A       __astart
+ 0001:038C       __cexit
+ 0002:019A       __cfltcvt_tab
+ 0002:01BE       __cflush
+ 0002:012B       __child
+ 0001:0B3A       __chkstk
+ 0001:0344       __cinit
+ 0001:0E5A       __cintDIV
+ 0002:0103       __cpumode
+ 0001:03EB       __ctermsub
+ 0001:039D       __c_exit
+ 0002:00E0       __dllinit
+ 0002:0104       __doserrno
+ 0001:0FBE       __dosret0
+ 0001:0FDD       __dosretax
+ 0001:0FCB       __dosreturn
+ 0002:04B6       __edata
+ 0002:0A00       __end
+ 0002:0122       __environ
+ 0002:012D       __exitflag
+ 0002:00EE       __fac
+ 0001:1044       __ffree
+ 0001:0428       __FF_MSGBANNER
+ 0002:01DA       __fheap
+ 0001:0F9D       __findlast
+ 0001:09EA       __flsbuf
+ 0001:1065       __fmalloc
+ 0002:01EA       __fpinit
+ 0000:9876  Abs  __fptaskdata
+ 0001:0DC8       __fptrap
+ 0001:118E       __freefarheap
+ 0001:1218       __freelist
+ 0001:0E0E       __getbuf
+ 0001:0DFC       __GetDGROUP
+ 0001:0EA6       __growseg
+ 0002:00D6       __hModule
+ 0001:0F37       __incseg
+ 0001:1242       __initseg
+ 0002:01F6       __iob
+ 0002:02E6       __iob2
+ 0002:0198       __lastiob
+ 0001:1276       __linkseg
+ 0002:00DC       __lpszCmdLine
+ 0001:0B74       __lseek
+ 0002:01D4       __lseekchk
+ 0001:0FEF       __maperror
+ 0001:0DCE       __myalloc
+ 0001:0E0C       __nearstub
+ 0001:110C       __newseg
+ 0002:0106       __nfile
+ 0001:0ACC       __NMSG_TEXT
+ 0001:0B03       __NMSG_WRITE
+ 0001:01AC       __nomain
+ 0002:0104       __oserr
+ 0002:0108       __osfile
+ 0002:00FF       __osmajor
+ 0002:00FE       __osminor
+ 0002:0102       __osmode
+ 0002:00FE       __osver
+ 0002:0100       __osversion
+ 0001:04F4       __output
+ 0002:0126       __pgmptr
+ 0002:01D6       __pnhFarHeap
+ 0001:119C       __searchseg
+ 0001:044C       __setenvp
+ 0002:01B8       __sigintoff
+ 0002:01B6       __sigintseg
+ 0000:0001  Abs  __sizec
+ 0000:0001  Abs  __sized
+ 0001:1030       __stackavail
+ 0001:0318       __stubmain
+ 0001:12E8       __STUBWEP
+ 0002:00FA       __umaskval
+ 0002:00D8       __wDataSeg
+ 0001:00C6       __wflags
+ 0002:00DA       __wHeapSize
+ 0000:0000  Imp  __WINFLAGS           (KERNEL.178)
+ 0002:00FD       __winmajor
+ 0002:00FC       __winminor
+ 0002:00FC       __winver
+ 0001:0C3C       __write
+ 0002:00E7       ___aDBrterr
+ 0002:00E5       ___aDBswpflg
+ 0002:011C       ___argc
+ 0002:011E       ___argv
+ 0001:101C       ___ExportedStub
+
+  Address         Publics by Value
+
+ 0000:0000  Imp  DOS3CALL             (KERNEL.102)
+ 0000:0000  Imp  GLOBALUNLOCK         (KERNEL.19)
+ 0000:0000  Imp  FATALAPPEXIT         (KERNEL.137)
+ 0000:0000  Imp  MCIDRIVERNOTIFY      (MMSYSTEM.711)
+ 0000:0000  Imp  LOCKSEGMENT          (KERNEL.23)
+ 0000:0000  Imp  GLOBALLOCK           (KERNEL.18)
+ 0000:0000  Imp  __AHINCR             (KERNEL.114)
+ 0000:0000  Imp  GLOBALFREE           (KERNEL.17)
+ 0000:0000  Imp  GETTICKCOUNT         (USER.13)
+ 0000:0000  Imp  DEFDRIVERPROC        (USER.255)
+ 0000:0000  Imp  INITTASK             (KERNEL.91)
+ 0000:0000  Imp  GLOBALALLOC          (KERNEL.15)
+ 0000:0000  Imp  FATALEXIT            (KERNEL.1)
+ 0000:0000  Imp  MESSAGEBOX           (USER.1)
+ 0000:0000  Imp  C16ThkSL01           (KERNEL.631)
+ 0000:0000  Imp  GLOBALREALLOC        (KERNEL.16)
+ 0000:0000  Imp  GETMODULEUSAGE       (KERNEL.48)
+ 0000:0000  Imp  WAVEOUTGETERRORTEXT  (MMSYSTEM.403)
+ 0000:0000  Imp  GETDOSENVIRONMENT    (KERNEL.131)
+ 0000:0000  Imp  GLOBALSIZE           (KERNEL.20)
+ 0000:0000  Imp  MESSAGEBEEP          (USER.104)
+ 0000:0000  Imp  __WINFLAGS           (KERNEL.178)
+ 0000:0000  Imp  GETVERSION           (KERNEL.3)
+ 0000:0000  Imp  ThunkConnect16       (KERNEL.651)
+ 0000:0000  Imp  LOCALINIT            (KERNEL.4)
+ 0000:0001  Abs  __sized
+ 0000:0001  Abs  __sizec
+ 0000:0006  Abs  pLocalHeap
+ 0000:0008  Abs  pAtomTable
+ 0000:000A  Abs  pStackTop
+ 0000:000C  Abs  pStackMin
+ 0000:000E  Abs  pStackBot
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 0000:9876  Abs  __fptaskdata
+ 0000:D6D6  Abs  __aDBused
+ 0000:D6D6  Abs  __aDBdoswp
+ 0001:0000       THK0_THUNKCONNECT16
+ 0001:0027       GETCURRENTPROCESS
+ 0001:002C       GETPRIORITYCLASS
+ 0001:0031       SETPRIORITYCLASS
+ 0001:0036       STOPSPC
+ 0001:003B       PAUSESPC
+ 0001:0040       PLAYSPC
+ 0001:0045       LOADSPC
+ 0001:004A       RESTORESPC
+ 0001:004F       DEINITSPC
+ 0001:0054       INITSPC
+ 0001:0059       STOPZSPC
+ 0001:005E       PAUSEZSPC
+ 0001:0063       PLAYZSPC
+ 0001:0068       DEINITZSPC
+ 0001:006D       INITZSPC
+ 0001:0072       WRITEREGISTRYSETTINGS
+ 0001:0077       READREGISTRYSETTINGS
+ 0001:007C       DISPLAYCONFIGDLG
+ 0001:00C6       __wflags
+ 0001:010A       __astart
+ 0001:01AC       __nomain
+ 0001:01C4       _sprintf
+ 0001:0232       _strcpy
+ 0001:026E       _strlen
+ 0001:0288       _memcpy
+ 0001:02E6       __aFlmul
+ 0001:02E6       __aFulmul
+ 0001:0318       __stubmain
+ 0001:0344       __cinit
+ 0001:038C       __cexit
+ 0001:039D       __c_exit
+ 0001:03EB       __ctermsub
+ 0001:0428       __FF_MSGBANNER
+ 0001:044C       __setenvp
+ 0001:04F4       __output
+ 0001:09EA       __flsbuf
+ 0001:0ACC       __NMSG_TEXT
+ 0001:0B03       __NMSG_WRITE
+ 0001:0B1A       __aNchkstk
+ 0001:0B3A       __aFchkstk
+ 0001:0B3A       __chkstk
+ 0001:0B74       __lseek
+ 0001:0C3C       __write
+ 0001:0DC8       __fptrap
+ 0001:0DCE       __myalloc
+ 0001:0DFC       __GetDGROUP
+ 0001:0E0C       __nearstub
+ 0001:0E0E       __getbuf
+ 0001:0E5A       __cintDIV
+ 0001:0E64       __amsg_exit
+ 0001:0EA6       __growseg
+ 0001:0F37       __incseg
+ 0001:0F9D       __findlast
+ 0001:0FBE       __dosret0
+ 0001:0FCB       __dosreturn
+ 0001:0FDD       __dosretax
+ 0001:0FEF       __maperror
+ 0001:101C       ___ExportedStub
+ 0001:1030       __stackavail
+ 0001:1044       __ffree
+ 0001:1065       __fmalloc
+ 0001:110C       __newseg
+ 0001:118E       __freefarheap
+ 0001:119C       __searchseg
+ 0001:1218       __freelist
+ 0001:1242       __initseg
+ 0001:1276       __linkseg
+ 0001:12AC       WEP
+ 0001:12E8       __STUBWEP
+ 0001:1300       LibMain
+ 0001:130E       DllEntryPoint
+ 0001:133A       MCINOTIFYRETURN
+ 0001:1366       MCIDRIVERPROC
+ 0001:1A4A       DriverProc
+ 0001:1C82       ??_C@_0BA@ECMP@SPC700?5Emulator?$AA@
+                    ??_C@_0BA@ECMP@SPC700?5Emulator?$AA@
+
+ 0001:1C92       ??_C@_0O@IFFE@MCISPCDLG?4DLL?$AA@
+                    ??_C@_0O@IFFE@MCISPCDLG?4DLL?$AA@
+
+ 0001:1CA0       ??_C@_0L@IAIO@MCISPC?4DRV?$AA@
+                    ??_C@_0L@IAIO@MCISPC?4DRV?$AA@
+
+ 0001:1CAC       ??_C@_0EI@MGPF@OUT_WAVE?4DLL?5was?5not?5found?4?5This@
+                    ??_C@_0EI@MGPF@OUT_WAVE?4DLL?5was?5not?5found?4?5This@
+
+ 0001:1CF4       ??_C@_0EG@LDEE@IN_SPC?4DLL?5was?5not?5found?4?5This?5f@
+                    ??_C@_0EG@LDEE@IN_SPC?4DLL?5was?5not?5found?4?5This?5f@
+
+ 0001:1D3A       ??_C@_0BC@HOFC@?$CFs?5was?5not?5found?4?$AA@
+                    ??_C@_0BC@HOFC@?$CFs?5was?5not?5found?4?$AA@
+
+ 0001:1D4C       ??_C@_0CI@NFLP@Failed?5to?5display?5configuration?5@
+                    ??_C@_0CI@NFLP@Failed?5to?5display?5configuration?5@
+
+ 0002:0004       rsrvptrs
+ 0002:0010       thk0_ThunkData16
+ 0002:003C       THK0_THUNKDATA16APIDATABASE
+ 0002:00CC       _szProduct
+ 0002:00D0       _Generic
+ 0002:00D4       _STKHQQ
+ 0002:00D6       __hModule
+ 0002:00D8       __wDataSeg
+ 0002:00DA       __wHeapSize
+ 0002:00DC       __lpszCmdLine
+ 0002:00E0       __dllinit
+ 0002:00E1       _aseglo
+ 0002:00E3       _aseghi
+ 0002:00E5       ___aDBswpflg
+ 0002:00E7       ___aDBrterr
+ 0002:00EA       __aintdiv
+ 0002:00EE       __fac
+ 0002:00F8       _errno
+ 0002:00FA       __umaskval
+ 0002:00FC       __winver
+ 0002:00FC       __winminor
+ 0002:00FD       __winmajor
+ 0002:00FE       __osminor
+ 0002:00FE       __osver
+ 0002:00FF       __osmajor
+ 0002:0100       __osversion
+ 0002:0102       __osmode
+ 0002:0103       __cpumode
+ 0002:0104       __doserrno
+ 0002:0104       __oserr
+ 0002:0106       __nfile
+ 0002:0108       __osfile
+ 0002:011C       ___argc
+ 0002:011E       ___argv
+ 0002:0122       __environ
+ 0002:0126       __pgmptr
+ 0002:012B       __child
+ 0002:012D       __exitflag
+ 0002:012E       __adbgmsg
+ 0002:0194       __aaltstkovr
+ 0002:0198       __lastiob
+ 0002:019A       __cfltcvt_tab
+ 0002:01B6       __sigintseg
+ 0002:01B8       __sigintoff
+ 0002:01BA       __asizeC
+ 0002:01BB       __asizeD
+ 0002:01BC       __amblksiz
+ 0002:01BE       __cflush
+ 0002:01D4       __lseekchk
+ 0002:01D6       __pnhFarHeap
+ 0002:01DA       __fheap
+ 0002:01EA       __fpinit
+ 0002:01F6       __iob
+ 0002:02E6       __iob2
+ 0002:04B6       _edata
+ 0002:04B6       __edata
+ 0002:04D0       _szElementName
+ 0002:05D4       _dwOldPriorityClass
+ 0002:05D8       _bDisplayMessage
+ 0002:05DA       _mciConfigParms
+ 0002:05FA       _szBuffer
+ 0002:09FA       _bPaused
+ 0002:09FC       _bPlaying
+ 0002:09FE       _bFileLoaded
+ 0002:0A00       _end
+ 0002:0A00       __end
+
+Program entry point at 0001:010a

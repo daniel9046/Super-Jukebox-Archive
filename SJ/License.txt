@@ -1,0 +1,8 @@
+                     License Agreement for Super Jukebox Source Code
+
+I am making the source code for Super Jukebox publicly avaialable mainly for educational
+purposes. Learn as much as you can from it and even use parts of it in your own programs,
+you can even modify the program itself as much as you want, but here's the catch, if you do 
+modify it you must *NOT* distribute the modified version in any way, shape or form, in short
+you must keep it for yourself. That's basically all. But remember, I take no responsibility
+for anything. C-ya!

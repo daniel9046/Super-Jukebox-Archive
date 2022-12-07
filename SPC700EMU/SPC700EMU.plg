@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SPC700EMU - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\windows\TEMP\RSPA094.TMP" with contents
+[
+/nologo /MT /W3 /GX /Ox /Ob2 /D "__WIN32" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SPC700EMU_EXPORTS" /D "VAR_CYCLES" /D "CPU_SHUTDOWN" /D "SPC700_SHUTDOWN" /D "SPC700_C" /D "NO_INLINE_SET_GET" /Fp"c:\spc700emu\Release/SPC700EMU.pch" /YX /Fo"c:\spc700emu\Release/" /Fd"c:\spc700emu\Release/" /FD /c 
+"H:\SJ\SPC700EMU\apu.cpp"
+"H:\SJ\SPC700EMU\global.cpp"
+"H:\SJ\SPC700EMU\port.cpp"
+"H:\SJ\SPC700EMU\soundux.cpp"
+"H:\SJ\SPC700EMU\spc700.cpp"
+]
+Creating command line "cl.exe @c:\windows\TEMP\RSPA094.TMP" 
+Creating temporary file "c:\windows\TEMP\RSPA095.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib /nologo /dll /incremental:no /pdb:"c:\spc700emu\Release/SPC700EMU.pdb" /machine:I386 /def:".\Spc700emu.def" /out:"c:\spc700emu\Release/SPC700EMU.dll" /implib:"c:\spc700emu\Release/SPC700EMU.lib" 
+c:\spc700emu\Release\apu.obj
+c:\spc700emu\Release\global.obj
+c:\spc700emu\Release\port.obj
+c:\spc700emu\Release\soundux.obj
+c:\spc700emu\Release\spc700.obj
+]
+Creating command line "link.exe @c:\windows\TEMP\RSPA095.TMP"
+<h3>Output Window</h3>
+Compiling...
+apu.cpp
+global.cpp
+port.cpp
+soundux.cpp
+spc700.cpp
+Linking...
+   Creating library c:\spc700emu\Release/SPC700EMU.lib and object c:\spc700emu\Release/SPC700EMU.exp
+
+
+
+<h3>Results</h3>
+SPC700EMU.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
